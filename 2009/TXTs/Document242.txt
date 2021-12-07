@@ -1,48 +1,167 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Proceedings of the Joint Conference of the 47th Annual Meeting of the ACL and the 4th International Joint Conference on Natural Language Processing of the AFNLP
+
+
+ACL-IJCNLP 2009
+
+Joint Conference of the
+47th Annual Meeting of the
+
+Association for Computational Linguistics
+and
+
+4th International Joint Conference on
+Natural Language Processing
+
+of the AFNLP
+
+Tutorial Abstracts
+
+2 August 2009
+Suntec, Singapore
+
+
+
+Production and Manufacturing by
+World Scientific Publishing Co Pte Ltd
+5 Toh Tuck Link
+Singapore 596224
+
+c©2009 The Association for Computational Linguistics
+and The Asian Federation of Natural Language Processing
+
+Order copies of this and other ACL proceedings from:
+
+Association for Computational Linguistics (ACL)
+209 N. Eighth Street
+Stroudsburg, PA 18360
+USA
+Tel: +1-570-476-8006
+Fax: +1-570-476-0860
+acl@aclweb.org
+
 ii
+
+
+
+Tutorial Co-Chairs:
+
+Diana McCarthy, University of Sussex, UK
+Chengqing Zong, Institute of Automation, Chinese Academy of Sciences (CASIA), China
+
 iii
-TableofContents
-FundamentalsofChineseLanguageProcessing
-Chu-RenHuangandQinLu..............................................................
-1
-TopicsinStatisticalMachineTranslation
-KevinKnightandPhilippKoehn..........................................................
-2
-SemanticRoleLabeling:Past,PresentandFuture
-Llu
-´
-M
-˚
-arquez...........................................................................
-3
-ComputationalModelingofHumanLanguageAcquisition
-AfraAlishahi............................................................................
-4
-LearningtoRank
-HangLi.................................................................................
-5
-State-of-the-artNLPApproachestoCoreferenceResolution:TheoryandPracticalRecipes
-SimonePaoloPonzettoandMassimoPoesio................................................
-6
+
+
+
+
+
+Table of Contents
+
+Fundamentals of Chinese Language Processing
+Chu-Ren Huang and Qin Lu . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+
+Topics in Statistical Machine Translation
+Kevin Knight and Philipp Koehn . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+
+Semantic Role Labeling: Past, Present and Future
+Lluı́s Màrquez . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+
+Computational Modeling of Human Language Acquisition
+Afra Alishahi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+
+Learning to Rank
+Hang Li . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+
+State-of-the-art NLP Approaches to Coreference Resolution: Theory and Practical Recipes
+Simone Paolo Ponzetto and Massimo Poesio . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+
 v
-TutorialProgram
-Sunday,August2,2009
-Morning
-FundamentalsofChineseLanguageProcessing
-8:30Œ12:00Chu-RenHuangandQinLu
-TopicsinStatisticalMachineTranslation
-KevinKnightandPhilippKoehn
-SemanticRoleLabeling:Past,PresentandFuture
-Llu
-´
-M
-˚
-arquez
-Afternoon
-ComputationalModelingofHumanLanguageAcquisition
-2:00Œ5:30AfraAlishahi
-LearningtoRank
-HangLi
-State-of-the-artNLPApproachestoCoreferenceResolution:TheoryandPractical
+
+
+
+
+
+Tutorial Program
+
+Sunday, August 2, 2009
+
+Morning Fundamentals of Chinese Language Processing
+8:30–12:00 Chu-Ren Huang and Qin Lu
+
+Topics in Statistical Machine Translation
+Kevin Knight and Philipp Koehn
+
+Semantic Role Labeling: Past, Present and Future
+Lluı́s Màrquez
+
+Afternoon Computational Modeling of Human Language Acquisition
+2:00–5:30 Afra Alishahi
+
+Learning to Rank
+Hang Li
+
+State-of-the-art NLP Approaches to Coreference Resolution: Theory and Practical
 Recipes
-SimonePaoloPonzettoandMassimoPoesio
+Simone Paolo Ponzetto and Massimo Poesio
+
 vii
+
+
+
+
+	Program
+

@@ -2,6 +2,7 @@ import PyPDF2
 
 yearacl = input("enter a year")
 
+yearc = [207,219,248]
 def PDFtoTXT(i):
     pdf = open(f'./'+yearacl+'/PDFs/Document{i}.pdf', 'rb')
     pdfReader = PyPDF2.PdfFileReader(pdf)

@@ -1,0 +1,1894 @@
+Document190.txt
+
+Document184.txt
+
+Document20.txt
+
+Document34.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+Articles 4
+Sentences 1087
+Spec sentences 190
+Nspec sentences 897
+
+Table 1: Characteristics of the BMC hedge dataset.
+
+
+
+Table 2
+Abstractive Summary: 
+82.02 80.88 81.96
+
+Outer dictionary 85.29 85.08 82.07
+
+Table 2: Summary of results.
+Document153.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+The proposed method consists
+
+Table 1: Statistics of NE Types of IREX Corpus
+
+NE Type Frequency (%)
+ARTIFACT 747 (4.0)
+DATE 3567 (19.1)
+LOCATION 5463 (29.2)
+MONEY 390 (2.1)
+ORGANIZATION 3676 (19.7)
+PERCENT 492 (2.6)
+PERSON 3840 (20.6)
+TIME 502 (2.7)
+Total 18677
+
+of two steps.
+
+
+
+Table 2
+Abstractive Summary: 
+The column of
+“NExT” shows the result of using NExT(Masui et
+
+2http://mecab.sourceforge.net/
+3http://chasen.org/∼taku/software/CRF++/
+4http://chasen.org/∼taku/software/
+
+yamcha/
+
+Table 2: NE Extraction Performance of IREX Corpus
+
+Proposed Baseline NExT
+CRF SVM CRF SVM
+
+ARTIFACT 0.487 0.518 0.458 0.457 -
+DATE 0.921 0.909 0.916 0.916 0.682
+LOCATION 0.866 0.863 0.847 0.846 0.696
+MONEY 0.951 0.610 0.937 0.937 0.895
+ORGANIZATION 0.774 0.766 0.744 0.742 0.506
+PERCENT 0.936 0.863 0.928 0.928 0.821
+PERSON 0.825 0.842 0.788 0.787 0.672
+TIME 0.901 0.903 0.902 0.901 0.800
+Total 0.842 0.834 0.821 0.820 0.732
+
+Table 3: Statistics of NE Types of NHK Corpus
+
+NE Type Frequency (%)
+DATE 755 (19%)
+LOCATION 1465 (36%)
+MONEY 124 (3%)
+ORGANIZATION 1056 (26%)
+PERCENT 55 (1%)
+PERSON 516 (13%)
+TIME 101 (2%)
+Total 4072
+
+al., 2002), an NE chunker based on hand-crafted
+rules, without 5-fold cross validation.
+4.2 Experiment of IREX Corpus
+
+Table 2 shows the results of extracting NEs of IREX
+corpus, which are measured with F-measure through
+5-fold cross validation.
+
+
+
+Table 3
+Abstractive Summary: 
+Ta-
+ble 3 shows the statistics of NEs of NHK corpus
+which were annotated by a graduate student except
+
+127
+
+
+
+Table 4: NE Extraction Performance of NHK Corpus
+
+Proposed Baseline NExT
+CRF SVM CRF SVM
+
+DATE 0.630 0.595 0.571 0.569 0.523
+LOCATION 0.837 0.825 0.797 0.811 0.741
+MONEY 0.988 0.660 0.971 0.623 0.996
+ORGANIZATION 0.662 0.636 0.601 0.598 0.612
+PERCENT 0.538 0.430 0.539 0.435 0.254
+PERSON 0.794 0.813 0.752 0.787 0.622
+TIME 0.250 0.224 0.200 0.247 0.260
+Total 0.746 0.719 0.702 0.697 0.615
+
+Table 5: Extraction of Familiar/Unfamiliar NEs
+Familiar Unfamiliar Other
+
+CRF (Proposed) 0.789 0.654 0.621
+CRF (Baseline) 0.757 0.556 0.614
+
+for ARTIFACT in accordance with the NE definition
+of IREX.
+Document147.txt
+
+Document146.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+SVM performed the best
+
+98
+
+
+
+Feature Description
+Question Features
+Q: Q punctuation density Ratio of punctuation to words in the question
+Q: Q KL div wikipedia KL divergence with Wikipedia corpus
+Q: Q KL div category KL divergence with “satisfied” questions in category
+Q: Q KL div trec KL divergence with TREC questions corpus
+Question-Answer Relationship Features
+QA: QA sum pos vote Sum of positive votes for all the answers
+QA: QA sum neg vote Sum of negative votes for all the answers
+QA: QA KL div wikipedia KL Divergence of all answers with Wikipedia corpus
+Asker User History Features
+UH: UH questions resolved Number of questions resolved in the past
+UH: UH num answers Number of all answers this user has received in the past
+UH: UH more recent rating Rating for the last question before current question
+UH: UH avg past rating Average rating given when closing questions in the past
+Category Features
+CA: CA avg time to close Average interval between opening and closing
+CA: CA avg num answers Average number of answers for that category
+CA: CA avg asker rating Average rating given by asker for category
+CA: CA avg num votes Average number of “best answer” votes in category
+
+Table 1: Sample features: Question (Q), Question-
+Answer Relationship (QA), Asker history (UH), and Cat-
+egory (CA).
+
+
+
+Table 2
+Abstractive Summary: 
+#Questions per Asker # Questions # Answers # Users
+1 132,279 1,197,089 132,279
+2 31,692 287,681 15,846
+
+3-4 23,296 213,507 7,048
+5-9 15,811 143,483 2,568
+
+10-14 5,554 54,781 481
+15-19 2,304 21,835 137
+20-29 2,226 23,729 93
+30-49 1,866 16,982 49
+50-100 842 4,528 14
+Total: 216,170 1,963,615 158,515
+
+Table 2: Distribution of questions, answers and askers
+.
+
+
+
+Table 3
+Abstractive Summary: 
+Pers 1 (97 questions) Pers 2 (49 questions) Pers 3 (25 questions)
+
+UH total answers received Q avg pos votes Q content kl trec
+UH questions resolved ”would” in answer Q content kl wikipedia
+”good luck” in answer ”answer” in question UH total answers received
+”is an” in answer ”just” in answer UH questions resolved
+”want to” in answer ”me” in answer Q content kl asker all cate
+”we” in answer ”be” in answer Q prev avg rating
+”want in” answer ”in the” in question CA avg asker rating
+”adenocarcinoma” in question CA History “anybody” in question
+”was” in question ”who is” in question Q content typo density
+”live” in answer ”those” in answer Q detail len
+
+Table 3: Top 10 features by Information Gain for three
+sample ASP Pers+Text models
+
+.
+
+
+
+Table 4
+Abstractive Summary: 
+IG ASP IG ASP Group
+0.104117 Q prev avg rating 0.30981 UH membersince in days
+0.102117 Q most recent rating 0.25541 Q prev avg rating
+0.047222 Q avg pos vote 0.22556 Q most recent rating
+0.041773 Q sum pos vote 0.15237 CA avg num votes
+0.041076 Q max pos vote 0.14466 CA avg time close
+0.03535 A ques timediff in minutes 0.13489 CA avg asker rating
+0.032261 UH membersince in days 0.13175 CA num ans per hour
+0.031812 CA avg asker rating 0.12437 CA num ques per hour
+0.03001 CA ratio ans ques 0.09314 Q avg pos vote
+0.029858 CA num ans per hour 0.08572 CA ratio ans ques
+
+Table 4: Top 10 features by information gain for ASP
+(trained for all askers) and ASP Group (trained for the
+group of askers with 20 to 29 questions)
+
+4 Conclusions
+We have presented preliminary results on personal-
+izing satisfaction prediction, demonstrating signif-
+icant accuracy improvements over a “one-size-fits-
+all” satisfaction prediction model.
+Document152.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+Training Set `(θ) Test Set `(θ)
+Manual -2.87 -3.73
+
+EM -3.90 -4.33
+Automatic -4.60 -5.80
+
+Table 1: Normalized log-likelihood of each model type
+with respect to the training set and the test set.
+Document35.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+Table 1: Datasets
+
+3.3 Establishing a Baseline for a Corpus-based
+System (CBS)
+
+Supervised statistical methods have been very suc-
+cessful in sentiment tagging of texts: on movie re-
+view texts they reach accuracies of 85-90% (Aue
+and Gamon, 2005; Pang and Lee, 2004).
+
+
+
+Table 2
+Abstractive Summary: 
+1gram 81.1 69.0 66.8 77.4
+2gram 83.7 68.6 71.2 73.9
+3gram 82.5 64.1 70.0 65.4
+
+Table 2: Accuracy of Naı̈ve Bayes on movie reviews.
+3The results for movie reviews are lower than those reported
+in Table 2 since the dataset is 10 times smaller, which results
+in less accurate classification.
+
+
+
+Table 3
+Abstractive Summary: 
+Dataset Movie News Blogs PRs
+Dataset size 1066 800 800 1200
+
+unigrams
+SVM 68.5 61.5 63.85 76.9
+NB 60.2 59.5 60.5 74.25
+nb features 5410 4544 3615 2832
+
+bigrams
+SVM 59.9 63.2 61.5 75.9
+NB 57.0 58.4 59.5 67.8
+nb features 16286 14633 15182 12951
+
+trigrams
+SVM 54.3 55.4 52.7 64.4
+NB 53.3 57.0 56.0 69.7
+nb features 20837 18738 19847 19132
+
+Table 3: Accuracy of unigram, bigram and trigram mod-
+els across domains.
+
+
+
+Table 4
+Abstractive Summary: 
+Test Data
+Training Data Movies News Blogs PRs
+Movies 68.5 55.2 53.2 60.7
+News 55.0 61.5 56.25 57.4
+Blogs 53.7 49.9 63.85 58.8
+PRs 55.8 55.9 56.25 76.9
+
+Table 4: Accuracy of SVM with unigram model
+
+results depends on the genre and size of the n-gram: on prod-
+uct reviews, all results are statistically significant at α = 0.025
+level; on movie reviews, the difference between Nav̈e Bayes
+and SVM is statistically significant at α = 0.01 but the signif-
+icance diminishes as the size of the n-gram increases; on news,
+only bi-grams produce a statistically significant (α = 0.01) dif-
+ference between the two machine learning methods, while on
+blogs the difference between SVMs and Nav̈e Bayes is most
+pronounced when unigrams are used (α = 0.025).
+Table 4 shows that in-
+domain training, as expected, consistently yields su-
+perior accuracy than out-of-domain training across
+all four datasets: movie reviews (Movies), news,
+blogs, and product reviews (PRs).
+
+
+
+Table 5
+Abstractive Summary: 
+55.8 55.9 56.25 60.7
+
+Table 5: System accuracy on best runs on sentences
+
+trained corpus-based classifiers, and with similar
+or better accuracy than the corpus-based classifiers
+trained on out-of-domain data.
+Table 5 confirms the predicted pattern: the
+LBS performs with lower accuracy than in-domain-
+
+4With coefficients: α=1, γ=15.
+
+
+
+Table 6
+Abstractive Summary: 
+CBS LBS
+Precision positives 89.3% 69.3%
+Precision negatives 55.5% 81.5%
+Pos/Neg Precision 58.0% 72.1%
+
+Table 6: Base-learners’ precision and recall on product
+reviews on test data.
+Table 6 below illustrates the complementarity of
+the performance CBS and LBS classifiers on the
+positive and negative categories.
+Table 6 shows that the corpus-based system has a
+very good precision on those sentences that it classi-
+fies as positive but makes a lot of errors on those sen-
+tences that it deems negative.
+
+
+
+Table 7
+Abstractive Summary: 
+LBS CBS Ensemble
+News Acc 67.8 53.2 73.3
+
+F 0.82 0.71 0.85
+Movies Acc 54.5 53.5 62.1
+
+F 0.73 0.72 0.77
+Blogs Acc 61.2 51.1 70.9
+
+F 0.78 0.69 0.83
+PRs Acc 59.5 58.9 78.0
+
+F 0.77 0.75 0.88
+Average Acc 60.7 54.2 71.1
+
+F 0.77 0.72 0.83
+
+Table 7: Performance of the ensemble classifier
+
+Table 7 shows that the combination of two classi-
+fiers into an ensemble using the weighting technique
+described above leads to consistent improvement in
+system performance across all domains/genres.
+Table 7 presents the results of
+these experiments by domain/genre.
+LBS CBS Ensemble
+News Acc 67.8 53.2 73.3
+
+F 0.82 0.71 0.85
+Movies Acc 54.5 53.5 62.1
+
+F 0.73 0.72 0.77
+Blogs Acc 61.2 51.1 70.9
+
+F 0.78 0.69 0.83
+PRs Acc 59.5 58.9 78.0
+
+F 0.77 0.75 0.88
+Average Acc 60.7 54.2 71.1
+
+F 0.77 0.72 0.83
+
+Table 7: Performance of the ensemble classifier
+
+Table 7 shows that the combination of two classi-
+fiers into an ensemble using the weighting technique
+described above leads to consistent improvement in
+system performance across all domains/genres.
+Document21.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+First,
+the Big Five has been shown in psychology to ex-
+
+165
+
+
+
+Trait High Low
+Extraversion warm, assertive, sociable, excitement seeking, active,
+
+spontaneous, optimistic, talkative
+shy, quiet, reserved, passive, solitary, moody
+
+Emotional stability calm, even-tempered, reliable, peaceful, confident neurotic, anxious, depressed, self-conscious
+Agreeableness trustworthy, considerate, friendly, generous, helpful unfriendly, selfish, suspicious, uncooperative, ma-
+
+licious
+Conscientiousness competent, disciplined, dutiful, achievement striving disorganised, impulsive, unreliable, forgetful
+Openness to experience creative, intellectual, curious, cultured, complex narrow-minded, conservative, ignorant, simple
+
+Table 1: Example adjectives associated with extreme values of the Big Five trait scales.
+Table 1 shows some of the trait adjec-
+tives associated with the extremes of each Big Five
+trait.
+
+
+
+Table 2
+Abstractive Summary: 
+‘I would suggest’ vs. ‘I would recommend’
+
+Table 2: The 67 generation parameters whose target values are learned.
+2.2 Random Sample Generation and Expert
+Judgments
+
+We generate a sample of 160 random utterances by
+varying the parameters in Table 2 with a uniform dis-
+tribution.
+
+
+
+Table 3
+Abstractive Summary: 
+Continuous parameters LR M5 SVM
+Content parameters:
+VERBOSITY 0.24 0.26 0.21
+RESTATEMENTS 0.14 0.14 0.04
+REPETITIONS 0.13 0.13 0.08
+CONTENT POLARITY 0.46 0.46 0.47
+REPETITIONS POLARITY 0.02 0.15 0.06
+CONCESSIONS 0.23 0.23 0.12
+CONCESSIONS POLARITY -0.01 0.16 0.07
+POLARISATION 0.20 0.21 0.20
+Syntactic template selection:
+CLAIM COMPLEXITY 0.10 0.33 0.26
+CLAIM POLARITY 0.04 0.04 0.05
+Aggregation operations:
+INFER - WITH CUE WORD 0.03 0.03 0.01
+INFER - ALSO CUE WORD 0.10 0.10 0.06
+JUSTIFY - SINCE CUE WORD 0.03 0.07 0.05
+JUSTIFY - SO CUE WORD 0.07 0.07 0.04
+JUSTIFY - PERIOD 0.36 0.35 0.21
+CONTRAST - PERIOD 0.27 0.26 0.26
+RESTATE - MERGE WITH COMMA 0.18 0.18 0.09
+CONCEDE - ALTHOUGH CUE WORD 0.08 0.08 0.05
+CONCEDE - EVEN IF CUE WORD 0.05 0.05 0.03
+Pragmatic markers:
+SUBJECT IMPLICITNESS 0.13 0.13 0.04
+STUTTERING INSERTION 0.16 0.23 0.17
+PRONOMINALIZATION 0.22 0.20 0.17
+Lexical choice parameters:
+LEXICAL FREQUENCY 0.21 0.21 0.19
+WORD LENGTH 0.18 0.18 0.15
+
+Table 3: Pearson’s correlation between parameter model
+predictions and continuous parameter values, for differ-
+ent regression models.
+rameters, Table 3 evaluates modeling accuracy by
+comparing the correlations between the model’s pre-
+dictions and the actual parameter values in the test
+folds.
+
+
+
+Table 4
+Abstractive Summary: 
+The CONTENT POLARITY parameter is modeled
+
+Binary parameters NB J48 NN ADA SVM
+Pragmatic markers:
+SOFTENER HEDGES
+
+kind of 0.00 0.00 0.16 0.11 0.10
+rather 0.00 0.00 0.02 0.01 0.01
+quite 0.14 0.08 0.09 0.07 0.06
+
+EMPHASIZER HEDGES
+basically 0.00 0.00 0.02 0.01 0.01
+
+ACKNOWLEDGMENTS
+yeah 0.00 0.00 0.04 0.03 0.03
+ok 0.13 0.07 0.06 0.05 0.05
+
+FILLED PAUSES
+err 0.32 0.20 0.24 0.22 0.19
+
+EXCLAMATION 0.23 0.34 0.36 0.38 0.34
+EXPLETIVES 0.27 0.18 0.24 0.17 0.15
+IN-GROUP MARKER 0.40 0.31 0.31 0.24 0.21
+TAG QUESTION 0.32 0.21 0.21 0.15 0.13
+CONFIRMATION 0.00 0.00 0.07 0.04 0.04
+
+Table 4: F-measure of the enabled class for classifica-
+tion models of binary parameters.
+Table 4 reports results for binary parameter
+classifiers, by comparing the F-measures of the en-
+abled class.
+For binary pa-
+rameters, Table 4 shows that the Naive Bayes classi-
+fier is generally the most accurate, with F-measures
+of .40 for the IN-GROUP MARKER parameter, and
+.32 for both the insertion of filled pauses (err) and
+tag questions.
+
+
+
+Table 5
+Abstractive Summary: 
+Openness to
+low 3.85
+
+experience
+
+Table 5: Example outputs controlled by the parameter estimation models for a comparison (#1) and a recommendation
+(#2), with the average judges’ ratings (Rating) and naturalness (Nat).
+Table 5 shows several sample outputs and
+the mean personality ratings from the human judges.
+
+
+
+Table 6
+Abstractive Summary: 
+Trait r ravg e
+Extraversion .45 • .80 • 1.89
+Emotional stability .39 • .64 • 2.14
+Agreeableness .36 • .68 • 2.38
+Conscientiousness -.01 -.02 2.79
+Openness to experience .17 • .41 • 2.51
+
+• statistically significant correlation
+p < .05, • p = .07 (two-tailed)
+
+Table 6: Pearson’s correlation coefficient r and mean ab-
+solute error e between the target personality scores and
+the 480 judges’ ratings (20 ratings per trait for 24 judges);
+ravg is the correlation between the personality scores and
+the average judges’ ratings.
+(Section 3.4)
+
+3.2 Parameter Estimation Evaluation
+Table 6 shows that extraversion is the dimension
+modeled most accurately by the parameter estima-
+tion models, producing a .45 correlation with the
+subjects’ ratings (p < .01).
+Additionally, Table 6 shows that the magni-
+tude of the correlation increases when considering
+the perception of a hypothetical average subject, i.e.
+Table 6 shows that the mean absolute error varies
+between 1.89 and 2.79 on a scale from 1 to 7.
+
+
+
+Table 7
+Abstractive Summary: 
+Trait Low High
+Extraversion 3.69 5.06 •
+Emotional stability 3.75 4.75 •
+Agreeableness 3.42 4.33 •
+Conscientiousness 4.16 4.15
+Openness to experience 3.71 4.06 •
+
+• statistically significant difference
+p ≤ .001 (two-tailed)
+
+Table 7: Average personality ratings for the utterances
+generated with the low and high target values for each
+trait on a scale from 1 to 7.
+Table 7 shows results evaluating whether utter-
+ances targeting the extremes of a trait are perceived
+differently.
+
+
+
+Table 8
+Abstractive Summary: 
+Method Rule-based Learned parameters
+Trait Low High Low High
+Extraversion 2.96 5.98 3.69 ◦ 5.05 ◦
+Emotional stability 3.29 5.96 3.75 4.75 ◦
+Agreeableness 3.41 5.66 3.42 4.33 ◦
+Conscientiousness 3.71 5.53 4.16 4.15 ◦
+Openness to experience 2.89 4.21 3.71 ◦ 4.06
+
+•,◦ significant increase or decrease of the variation range
+over the average rule-based ratings (p < .05, two-tailed)
+
+Table 8: Pair-wise comparison between the ratings of
+the utterances generated using PERSONAGE-PE with ex-
+treme target values (Learned Parameters), and the ratings
+for utterances generated with Mairesse and Walker’s rule-
+based PERSONAGE generator, (Rule-based).
+Table 8 compares the mean ratings of
+the utterances generated by PERSONAGE-PE with
+ratings of 20 utterances generated by PERSONAGE
+for each extreme of each Big Five scale (40 for ex-
+traversion, resulting in 240 handcrafted utterances in
+total).
+Table 8 shows that the handcrafted parame-
+ter settings project a significantly more extreme per-
+sonality for 6 traits out of 10.
+
+
+
+Table 9
+Abstractive Summary: 
+Trait Rule-based Random Learned
+All 4.59 4.38 3.98
+
+Table 9: Average naturalness ratings for utterances gen-
+erated using (1) PERSONAGE, the rule-based generator,
+(2) the random utterances (expert judges) and (3) the out-
+puts of PERSONAGE-PE using the parameter estimation
+models (Learned, naive judges).
+Table 9 shows
+that the average naturalness is 3.98 out of 7, which is
+significantly lower (p < .05) than the naturalness of
+handcrafted and randomly generated utterances re-
+ported by Mairesse and Walker (2007).
+Document185.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+Language CCA Kappa DA
+German 93% 0.86 88%
+Dutch 96% 0.92 96%
+Danish 89% 0.78 89%
+Norwegian 93% 0.86 81%
+Swedish 96% 0.92 95%
+Finnish 92% 0.84 89%
+
+Table 1: Inter-judge agreement metrics.
+Table 1 shows the percentage of
+agreement in classifying words as compounds or
+non-compounds (Compound Classification Agree-
+ment, CCA) for each language and the Kappa score
+(Carletta, 1996) obtained from it, and the percent-
+age of words for which also the decomposition pro-
+vided was identical (Decompounding Agreement,
+DA).
+
+
+
+Table 2
+Abstractive Summary: 
+Language Morphemes
+German ∅,-e,+s,+e,+en,+nen,+ens,+es,+ns,+er
+Dutch ∅,-e,+s,+e,+en
+Danish ∅,+e,+s
+Norwegian ∅,+e,+s
+Swedish ∅,+o,+u,+e,+s
+Finnish ∅
+
+Table 2: Linking morphemes used in this work.
+Table 2 lists the ones used in our
+system (Langer, 1998; Marek, 2006; Krott, 1999).
+
+
+
+Table 3
+Abstractive Summary: 
+254
+
+
+
+Method Precision Recall Accuracy
+Never split - 0.00% 64.09%
+Geometric mean of frequencies 39.77% 54.06% 65.58%
+Compound probability 60.41% 80.68% 76.23%
+Mutual Information 82.00% 48.29% 80.52%
+Support-Vector Machine 83.56% 79.48% 87.21%
+
+Table 3: Results of the several configurations.
+Table 3 shows the results reported for Ger-
+
+Language P R A
+German 83.56% 79.48% 87.21%
+Dutch 78.99% 76.18% 83.45%
+Danish 81.97% 87.12% 85.36%
+Norwegian 88.13% 93.05% 90.40%
+Swedish 83.34% 92.98% 87.79%
+Finnish 90.79% 91.21% 91.62%
+
+Table 4: Results in all the different languages.
+
+
+
+Table 4
+Abstractive Summary: 
+Table 3 shows the results reported for Ger-
+
+Language P R A
+German 83.56% 79.48% 87.21%
+Dutch 78.99% 76.18% 83.45%
+Danish 81.97% 87.12% 85.36%
+Norwegian 88.13% 93.05% 90.40%
+Swedish 83.34% 92.98% 87.79%
+Finnish 90.79% 91.21% 91.62%
+
+Table 4: Results in all the different languages.
+
+
+
+Table 5
+Abstractive Summary: 
+255
+
+
+
+Language for training
+de nl da no sv fi others
+
+de P:83.56 P:78.69 P:74.96 P:88.93 P:82.72 P:89.69 P:80.89
+R:79.48 R:75.48 R:92.77 R:89.26 R:90.79 R:89.96 R:76.07
+A:87.21 A:82.76 A:83.53 A:90.31 A:86.53 A:90.82 A:88.15
+
+nl P:79.52 P:78.99 P:76.93 P:92.81 P:85.67 P:90.98 P:77.53
+R:75.74 R:76.18 R:89.02 R:55.08 R:87.15 R:86.73 R:76.54
+A:87.77 A:83.45 A:83.21 A:91.00 A:86.47 A:88.95 A:82.32
+
+da P:82.21 P:90.86 P:81.97 P:90.61 P:85.52 P:92.65 P:76.28
+R:45.01 R:42.94 R:87.12 R:80.25 R:81.41 R:82.46 R:94.84
+A:78.95 A:74.78 A:85.36 A:89.30 A:83.70 A:87.55 A:84.60
+
+no P:68.23 P:70.18 P:74.85 P:88.13 P:82.25 P:90.08 P:88.78
+R:83.33 R:87.18 R:96.67 R:93.05 R:94.21 R:91.84 R:90.88
+A:83.77 A:80.67 A:84.18 A:90.40 A:87.24 A:91.41 A:89.85
+
+sv P:76.57 P:77.33 P:76.31 P:89.00 P:83.34 P:90.81 P:83.89
+R:79.76 R:81.79 R:94.66 R:90.41 R:92.98 R:90.86 R:92.05
+A:87.18 A:83.38 A:84.57 A:89.67 A:87.79 A:91.38 A:87.69
+
+fi P:74.12 P:74.50 P:75.93 P:88.71 P:83.54 P:90.79 P:90.70
+R:80.12 R:81.67 R:95.39 R:91.46 R:92.70 R:91.21 R:90.62
+A:85.93 A:81.98 A:84.51 A:90.07 A:87.52 A:91.62 A:91.18
+
+Table 5: Result training and testing in different lan-
+guages.
+Table 5 shows the results obtained in this
+case, the last column indicating the results when the
+model is trained from the training instances from
+all the other languages together.
+Document191.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+The parameters, i.e.,
+the similarity threshold of DSIM classifier, gamma
+parameter of RBF kernel, and the cost-factor j of
+SVM, i.e., the ratio by which training errors on pos-
+itive examples outweight errors on negative ones,
+
+2http://www.cs.utexas.edu/users/kbarker/working notes/
+ldoce-vocab.html
+
+4
+
+
+
+Table 1: Performance comparison of synonym classifiers
+Classifier Precision Recall F-1
+DSIM 33.13% 49.71% 39.76%
+DFEAT 95.25% 82.31% 88.30%
+PAT 23.86% 45.17% 31.22%
+DSIM-PAT 30.62% 51.34% 38.36%
+DFEAT-PAT 95.37% 82.31% 88.36%
+
+were optimized using one of the 5-fold cross valida-
+tion train-test pair on the basis of F-1 measure.
+
+
+
+Table 2
+Abstractive Summary: 
+The result was promising, achieving more
+than 120% increase over conventional DSIM classi-
+
+5
+
+
+
+Table 2: Acquired synonyms of video and program
+For query word: video
+
+Rank DSIM DFEAT
+1 computer computer
+2 television television
+3 movie multimedia
+4 film communication
+5 food* entertainment
+6 multimedia advertisement
+7 drug* food*
+8 entertainment recording
+9 music portrait
+
+10 radio movie
+
+For query word: program
+Rank DSIM DFEAT
+
+1 system project
+2 plan system
+3 project unit
+4 service status
+5 policy schedule
+6 effort* organization*
+7 bill* activity*
+8 company* plan
+9 operation scheme
+
+10 organization* policy
+
+fier.
+Table 2 lists the acquired synonyms of video and
+program.
+Document218.txt
+
+Document9.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+This resulted
+in a three-way answer key containing 410 (51%)
+
+Reference Systems’ Responses
+Answer YES UNKN NO Totals
+YES 2449 2172 299 4920
+
+UNKN 929 2345 542 3816
+
+NO 348 415 101 864
+
+Totals 3726 4932 942 9600
+
+Table 1: Contingency table of responses over all 800 en-
+tailment pairs and all 12 runs.
+Table 1 gives another view of the relative diffi-
+culty of detecting contradiction.
+
+
+
+Table 2
+Abstractive Summary: 
+The test set also
+
+Main Task NIST Judge 1
+YES UNKN NO
+
+YES 378 27 5
+
+NO 48 242 100
+
+conflated agreement = .90
+
+Main Task NIST Judge 2
+YES UNKN NO
+
+YES 383 23 4
+
+NO 46 267 77
+
+conflated agreement = .91
+
+Table 2: Agreement between NIST judges (columns) and
+main task reference answers (rows).
+
+
+
+Table 3
+Abstractive Summary: 
+The increased uncertainty
+
+YES UNKN NO
+
+YES 381
+
+UNKN 82 217
+
+NO 11 43 66
+
+three-way agreement = .83
+
+Table 3: Agreement between NIST judges.
+Table 3 shows the three-
+way agreement between the two NIST annotators.
+Document187.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+limit
+
+AAC Email 48.92% 61.94% 84.83%
+Callhome 43.76% 54.62% 81.38%
+Charlotte 48.30% 65.69% 83.74%
+SBCSAE 42.30% 60.81% 79.86%
+Micase 49.00% 69.18% 84.08%
+Switchboard 60.35% 80.33% 82.57%
+Slate 53.13% 81.61% 85.88%
+
+Table 1: A trigram model compared to the limits.
+Document193.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+2 Related Work
+
+Mani and Wilson (2000) worked on news and in-
+troduced an annotation scheme for temporal ex-
+pressions, and a method for using explicit tempo-
+
+13
+
+
+
+Sentence Order Event Temporal Expression
+1 Event X None
+2 Event Y January 10, 2007
+3 Event X None
+4 Event X November 16, 1967
+5 Event Y None
+6 Event Y January 10, 2007
+7 Event X None
+
+Table 1: Problematic Example
+
+ral expressions to assign activity times to the en-
+tirety of an article.
+
+
+
+Table 2
+Abstractive Summary: 
+For the purposes of this experiment we
+took the union of the possible dates mentioned in a
+sentence as acceptable activity times, thus both the
+report statement date and the date mentioned in the
+
+1Analogously, our approach will assign correct activity time
+to all event Y sentences
+
+Article Set # of Articles # of Sentences
+Duke Rape Case 5 151
+
+Mumbai Bombing 8 284
+Israeli Conflict 9 300
+
+Table 2: Article and Sentence distribution
+
+report are correct activity times for the sentence.
+
+
+
+Table 3
+Abstractive Summary: 
+Table 3: Two topics representing a different perspective
+on the same event
+
+sentences, but a cluster of sentences representing an
+event.
+
+
+
+Table 4
+Abstractive Summary: 
+M1 M2 M3
+
+IC Base 272/300
+90.7%
+
+IC (1) 20 250/300
+83.3%
+
+158/205
+77.1%
+
+12/22
+54.5%
+
+118/151
+78.1%
+
+IC (1) 50 263/300
+87.7%
+
+168/192
+87.5%
+
+12/19
+63.2%
+
+127/139
+91.4%
+
+IC (1)100 266/300
+88.7%
+
+173/202
+85.6%
+
+11/20
+55.0%
+
+130/149
+87.2%
+
+IC (2) 20 250/300
+83.3%
+
+156/181
+86.2%
+
+11/18
+61.1%
+
+117/130
+90.0%
+
+IC (3) 20 225/300
+75.0%
+
+112/145
+77.2%
+
+14/21
+66.7%
+
+75/95
+78.9%
+
+IC (3) 50 134/300
+44.7%
+
+115/262
+43.9%
+
+14/25
+56.0%
+
+76/206
+36.9%
+
+Table 4: Results : Sentence Breakdown
+
+17
+
+
+
+events.
+4.1 Results
+Table 4 presents results for the three sets of articles
+on the six different experiments performed.
+Document37.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+7(c) 2005-06, TripAdvisor, LLC All rights reserved
+
+312
+
+
+
+rated aspect top words
+
+service staff friendly helpful service desk concierge excellent extremely hotel great reception english pleasant help
+
+location hotel walk location station metro walking away right minutes close bus city located just easy restaurants
+
+local rooms room bathroom shower bed tv small water clean comfortable towels bath nice large pillows space beds tub
+
+topics - breakfast free coffee internet morning access buffet day wine nice lobby complimentary included good fruit
+
+- $ night parking rate price paid day euros got cost pay hotel worth euro expensive car extra deal booked
+
+- room noise night street air did door floor rooms open noisy window windows hear outside problem quiet sleep
+
+global - moscow st russian petersburg nevsky russia palace hermitage kremlin prospect river prospekt kempinski
+
+topics - paris tower french eiffel dame notre rue st louvre rer champs opera elysee george parisian du pantheon cafes
+
+Table 1: Top words from MAS for hotel reviews.
+
+
+
+Table 2
+Abstractive Summary: 
+Krooms top words
+
+2 rooms clean hotel room small nice comfortable modern good quite large lobby old decor spacious decorated bathroom size
+
+room noise night street did air rooms door open noisy window floor hear windows problem outside quiet sleep bit light
+
+3 room clean bed comfortable rooms bathroom small beds nice large size tv spacious good double big space huge king
+
+room floor view rooms suite got views given quiet building small balcony upgraded nice high booked asked overlooking
+
+room bathroom shower air water did like hot small towels door old window toilet conditioning open bath dirty wall tub
+
+4 room clean rooms comfortable bed small beds nice bathroom size large modern spacious good double big quiet decorated
+
+check arrived time day airport early room luggage took late morning got long flight ready minutes did taxi bags went
+
+room noise night street did air rooms noisy open door hear windows window outside quiet sleep problem floor conditioning
+
+bathroom room shower tv bed small water towels bath tub large nice toilet clean space toiletries flat wall sink screen
+
+Table 2: Top words for aspect rooms with different number of topics K
+rooms
+
+.
+Document23.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+3 The Approach
+
+3.1 Lexical Smoothing and Search Errors
+
+In White et al.’s (2007) initial investigation of scal-
+ing up OpenCCG for broad coverage realization,
+
+test set grammar complete
+oracle / best
+
+dev (00) dev 49.1% / 47.8%
+train 37.5% / 22.6%
+
+Table 1: Percentage of complete realizations using an or-
+acle n-gram model versus the best performing factored
+language model.
+
+
+
+Table 2
+Abstractive Summary: 
+187
+
+
+
+Table 2: Hypertagger accuracy on Sections 00 and 23.
+
+
+
+Table 3
+Abstractive Summary: 
+As we can see, taking
+
+Table 3: Hypertagger feature ablation testing results on
+Section 00.
+
+
+
+Table 4
+Abstractive Summary: 
+As Table 4 indicates, us-
+ing the hypertagger in an iterative beta-best fash-
+ion more than doubles the number of grammati-
+cally complete realizations found within the time
+
+188
+
+
+
+Table 5: Realization quality metrics exact match, BLEU and METEOR, on complete realizations only and overall,
+with and without hypertagger, on Sections 00 and 23.
+As Table 4 indicates, us-
+ing the hypertagger in an iterative beta-best fash-
+ion more than doubles the number of grammati-
+cally complete realizations found within the time
+
+188
+
+
+
+Table 5: Realization quality metrics exact match, BLEU and METEOR, on complete realizations only and overall,
+with and without hypertagger, on Sections 00 and 23.
+
+
+
+Table 5
+Abstractive Summary: 
+Sec- Hyper- Complete Overall
+tion tagger BLEU METEOR Exact BLEU METEOR
+00 with 0.8137 0.9153 15.3% 0.6567 0.8494
+
+w/o 0.6864 0.8585 11.3% 0.5902 0.8209
+23 with 0.8149 0.9162 16.0% 0.6701 0.8557
+
+w/o 0.6910 0.8606 12.3% 0.6022 0.8273
+
+Table 4: Percentage of grammatically complete realiza-
+tions, runtimes for complete realizations and overall run-
+times, with and without hypertagger, on Sections 00 and
+23.
+Table 5 shows that increasing the number of com-
+plete realizations also yields improved BLEU and
+METEOR scores, as well as more exact matches.
+Document144.txt
+
+Document150.txt
+
+Document178.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+Accuracy (%)
+Cues used (current utterance) 42 tags 7 tags
+Lexical 69.7 81.9
+Lexical+Syntactic 70.0 82.4
+Lexical+Syntactic+Prosodic 70.4 82.9
+
+Table 1: Dialog act tagging accuracies for various cues on the
+SWBD-DAMSL corpus.
+
+
+
+Table 2
+Abstractive Summary: 
+(5)
+leads to an implicit partitioning of the data corpus
+
+226
+
+
+
+Training Test
+Farsi Eng Jap Eng Chinese Eng Farsi Eng Jap Eng Chinese Eng
+
+Sentences 8066 12239 46311 925 604 506
+Running words 76321 86756 64096 77959 351060 376615 5442 6073 4619 6028 3826 3897
+Vocabulary 6140 3908 4271 2079 11178 11232 1487 1103 926 567 931 898
+Singletons 2819 1508 2749 1156 4348 4866 903 573 638 316 600 931
+
+Table 2: Statistics of the training and test data used in the experiments.
+
+
+
+Table 3
+Abstractive Summary: 
+Lexical selection accuracy is measured in terms of
+the F-measure derived from recall ( |Res∩Ref ||Ref | ∗ 100)
+and precision ( |Res∩Ref ||Res| ∗ 100), where Ref is the
+set of words in the reference translation and Res is
+
+2http://www.statmt.org/moses
+3A very small subset of the data was reserved for optimizing
+
+the interpolation factor (α) described in Section 3.1
+
+227
+
+
+
+F-score (%) BLEU (%)
+w/o DA tags w/ DA tags w/o DA tags w/ DA tags
+
+Language pair 7tags 42tags 7tags 42tags
+Farsi-English 56.46 57.32 57.74 22.90 23.50 23.75
+Japanese-English 79.05 79.40 79.51 54.15 54.21 54.32
+Chinese-English 65.85 67.24 67.49 48.59 52.12 53.04
+
+Table 3: F-measure and BLEU scores with and without use of dialog act tags.
+Document179.txt
+
+Document151.txt
+
+Document145.txt
+
+Document22.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+Form Example
+base (bare) speak
+base (infinitive) to speak
+third person singular speaks
+past spoke
+-ing participle speaking
+-ed participle spoken
+
+Table 1: Five forms of inflections of English verbs (Quirk
+et al., 1985), illustrated with the verb “speak”.
+
+
+
+Table 2
+Abstractive Summary: 
+INGprog
+
+Table 2: Sentences with verb form errors.
+Table 2 shows some sentences
+with these errors.
+6.4 Results for Auxiliary Agreement &
+Complementation
+
+Table 8 summarizes the results for auxiliary agree-
+ment and complementation, and Table 2 shows some
+examples of real sentences corrected by the system.
+
+
+
+Table 3
+Abstractive Summary: 
+Table 3: Usage of various verb forms.
+Table 3 gives a com-
+plete list of verb form usages which will be covered.
+
+
+
+Table 4
+Abstractive Summary: 
+JLE (Japanese Learners of English corpus) This
+corpus is based on interviews for the Stan-
+dard Speaking Test, an English-language pro-
+ficiency test conducted in Japan (Izumi et al.,
+
+177
+
+
+
+Input Hypothesized Correction
+None Valid Invalid
+
+w/ errors false neg true pos inv pos
+w/o errors true neg false pos
+
+Table 4: Possible outcomes of a hypothesized correction.
+We
+will thus apply the outcomes in Table 4 at the sen-
+tence level; that is, the output sentence is considered
+a true positive only if the original sentence contains
+errors, and only if valid corrections are offered for
+all errors.
+
+
+
+Table 5
+Abstractive Summary: 
+PP
+
+*/IN SG
+
+VP
+
+crr/VBG ...
+
+PP
+
+*/IN NP
+
+err/NN
+
+Table 5: Effects of incorrect verb forms on parse trees.
+
+
+
+Table 6
+Abstractive Summary: 
+verb1 *ing enjoy reading and
+and {INGverb, going to pachinko
+INFverb} go shopping and have dinner
+prep for studying French language
+{INGprep} ∗ a class for sign language
+have I have rented a video
+{EDperf} * I have lunch in Ginza
+
+Table 6: The n-grams used for filtering, with examples
+of sentences which they are intended to differentiate.
+Table 6 shows the n-grams, and Table 7
+provides a breakdown of false positives in AQUAINT
+after n-gram filtering.
+
+
+
+Table 7
+Abstractive Summary: 
+BASEmd 16.2% {INGverb,INFverb} 33.9%
+BASEdo 0.9% {INGprog,EDpass} 21.0%
+FINITE 12.8% INGprep 13.7%
+
+EDperf 1.4%
+
+Table 7: The distribution of false positives in AQUAINT.
+
+
+
+Table 8
+Abstractive Summary: 
+10With p = 1∗10−10 and p = 0.038, respectively, according
+to McNemar’s test
+
+180
+
+
+
+Corpus Method Accuracy Precision Precision Recall
+(correction) (detection)
+
+JLE verb-only 98.85% 71.43% 84.75% 31.51%
+all 98.94% 68.00% 80.67% 42.86%
+
+HKUST all not available 71.71% not available
+
+Table 8: Results on the JLE and HKUST corpora for auxiliary agreement and complementation.
+6.4 Results for Auxiliary Agreement &
+Complementation
+
+Table 8 summarizes the results for auxiliary agree-
+ment and complementation, and Table 2 shows some
+examples of real sentences corrected by the system.
+
+
+
+Table 9
+Abstractive Summary: 
+BASEmd 13 (92.3%) 25 (80.0%)
+BASEdo 5 (100%) 0
+FINITE 9 (55.6%) 0
+EDperf 11 (90.9%) 3 (66.7%)
+{INGprog,EDpass} 54 (58.6%) 30 (70.0%)
+{INGverb,INFverb} 45 (60.0%) 16 (59.4%)
+INGprep 10 (60.0%) 2 (100%)
+
+Table 9: Correction precision of individual correction
+patterns (see Table 5) on the JLE and HKUST corpus.
+Document36.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+301
+
+
+
+Table 1: Hedge-clipping English
+An official was quoted yesterday as accusing Iran of supplying explosive technology used in lethal attacks on British
+troops in southern Iraq
+An official was quoted yesterday as accusing Iran of supplying explosive technology used in lethal attacks on British
+troops in Iraq
+An official was quoted yesterday as accusing Iran of supplying explosive technology used in lethal attacks on British
+troops
+An official was quoted yesterday as accusing Iran of supplying explosive technology used in lethal attacks on troops
+An official was quoted yesterday as accusing Iran of supplying explosive technology used in lethal attacks
+An official was quoted yesterday as accusing Iran of supplying explosive technology used in attacks
+An official was quoted yesterday as accusing Iran of supplying explosive technology
+An official was quoted yesterday as accusing Iran of supplying technology< A C D E > < B C D E >< C D E >< D E >< E >< > { A B C D E }{ A C D E }{ A C D E }{ A C D E }{ A C D E }< D E > < B C D E >< C D E >< D E >< E >< > { B C D E }{ C D E }{ D E }{ D E }{ D E }< > < B C D E >< C D E >< D E >< E >< > { B C D E }{ C D E }{ D E }{ E }{ }
+
+< C D E > < B C D E >< C D E >< D E >< E >< > { B C D E }{ C D E }{ C D E }{ C D E }{ C D E }< E > < B C D E >< C D E >< D E >< E >< > { B C D E }{ C D E }{ D E }{ E }{ E }
+Figure 4: Combining TDP suffixes
+
+-koto and -no.
+
+
+
+Table 2
+Abstractive Summary: 
+9http://www.nikkei.co.jp
+
+304
+
+
+
+Table 2: The rating scale on fluency
+
+RATING EXPLANATION
+1 makes no sense
+2 only partially intelligible/grammatical
+3 makes sense; seriously flawed in gram-
+
+mar
+4 makes good sense; only slightly flawed
+
+in grammar
+5 makes perfect sense; no grammar flaws
+
+might look like, we manually searched the news site
+for a full-length article that might reasonably be con-
+sidered a long version of that brief.
+
+
+
+Table 3
+Abstractive Summary: 
+Table 3: The rating scale on content overlap
+
+RATING EXPLANATION
+1 no overlap with reference
+2 poor or marginal overlap w. ref.
+
+
+
+Table 4
+Abstractive Summary: 
+305
+
+
+
+Table 4: Fluency (Average)
+
+MODEL/CR 50% 60% 70%
+GST 3.430 3.820 3.810
+DPM 2.222 2.372 2.660
+
+Human − 4.45 −
+
+Table 5: Semantic (Content) Overlap (Average)
+
+MODEL/CR 50% 60% 70%
+GST 2.720 3.181 3.405
+DPM 2.210 2.548 2.890
+
+in the future.
+We find in Table 4 a clear superiority of GST over
+DPM at every compression rate examined, with flu-
+ency improved by as much as 60% at 60%.
+Document192.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+3 Corpus Study
+
+The generator is informed by a corpus study of em-
+bedded discourse units on two discourse annotated
+corpora: the RST Discourse Treebank (Carlson et
+al., 2001) and the Penn Discourse Treebank (PDTB-
+
+8
+
+
+
+E
+la
+
+b-
+ad
+
+d
+
+E
+xa
+
+m
+pl
+
+e
+
+E
+la
+
+b-
+ge
+
+n-
+sp
+
+ec
+
+R
+es
+
+ta
+te
+
+m
+en
+
+t
+
+E
+la
+
+b-
+se
+
+t-
+m
+
+em
+
+A
+tt
+
+ri
+bu
+
+ti
+on
+
+C
+on
+
+di
+ti
+
+on
+
+A
+nt
+
+it
+he
+
+si
+s
+
+C
+on
+
+ce
+ss
+
+io
+n
+
+C
+ir
+
+cu
+m
+
+st
+an
+
+ce
+
+P
+ur
+
+po
+se
+
+N
+P
+
+-m
+od
+
+ifi
+er
+
+s
+
+relative clause 143 2 2 147
+participial clause 96 4 1 1 11 4 117
+NP 34 8 22 64
+NP-coord 6 6
+cue + NP 5 1 2 3 2 13
+Adj + cue 2 2
+number 2 2
+including + NP 13 5 18
+
+V
+P
+
+-
+or
+
+S
+-
+
+m
+od
+
+ifi
+er
+
+s
+
+to-infinitive 4 30 34
+NP + V 106 106
+cue + S 5 20 14 9 29 77
+PP 11 9 1 21
+S 7 1 1 9
+according to NP 7 7
+V + NP 6 6
+as + S 4 4
+Adv + number 1 1 2
+cue + Adj 2 2
+cue + participial 2 2
+cue + V 1 1
+
+310 19 11 22 14 125 20 18 12 54 35 640
+
+Table 1: Syntactic types of parentheticals in the RST corpus
+
+Relation Connective in parenthetical Connective in host distribution in corpus
+TEMPORAL 101 (48.8%) 2 3434 (18.6%)
+
+CONTINGENCY 53 (25.6%) 0 3286 (17.8%)
+COMPARISON 38 (18.3%) 5 5490 (29.7%)
+EXPANSION 15 (7.2%) 5 6239 (33.8%)
+
+TOTAL: 207 12 18484
+
+Table 2: Relations between parentheticals and their hosts in the PDTB
+
+Group, 2008).2 The aim of the study was to es-
+tablish what rhetorical relations can hold between
+parentheticals and their hosts and whether individ-
+ual rhetorical relations tend to correlate with specific
+syntactic types.
+Table 1 illustrates the findings of the study on the
+RST corpus, showing the correlation between syn-
+tactic types of parentheticals and rhetorical relations
+between parentheticals and their hosts in the corpus.
+Document186.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+Features Books DVDs Elec-
+tronic 
+
+Kitchen
+
+1Gram 0.75 0.84 0.8 0.825 
+2Gram 0.75 0.73 0.815 0.785 
+1+2Gram 0.765 0.81 0.825 0.80 
+
+1Gram+2Gram 0.79 0.845 0.85 0.845 
+ 
+
+Table 1: Accuracy results on the testing data of single 
+domain classification using different feature sets.
+Document8.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+59
+
+
+
+Metric Adequacy Fluency Rank Constituent Average
+MAXSIMn+d 0.780 0.827 0.875 0.760 0.811
+MAXSIMn 0.804 0.845 0.893 0.766 0.827
+Semantic-role 0.774 0.839 0.804 0.742 0.790
+ParaEval-recall 0.712 0.742 0.769 0.798 0.755
+METEOR 0.701 0.719 0.746 0.670 0.709
+BLEU 0.690 0.722 0.672 0.603 0.672
+
+Table 1: Overall correlations on the Europarl and News Commentary datasets.
+We gather the correlation results of these metrics
+from the workshop paper (Callison-Burch et al.,
+2007), and show in Table 1 the overall correlations
+of these metrics over the Europarl and News Com-
+mentary datasets.
+The results in Table 1 show that MAXSIMn and
+MAXSIMn+d achieve overall average (over the four
+criteria) correlations of 0.827 and 0.811 respec-
+tively.
+
+
+
+Table 2
+Abstractive Summary: 
+5 Results
+
+To evaluate our metric, we conduct experiments on
+datasets from the ACL-07 MT workshop and NIST
+
+4Available at: http://sourceforge.net/projects/mstparser
+
+Europarl
+Metric Adq Flu Rank Con Avg
+MAXSIMn+d 0.749 0.786 0.857 0.651 0.761
+MAXSIMn 0.749 0.786 0.857 0.651 0.761
+Semantic-role 0.815 0.854 0.759 0.612 0.760
+ParaEval-recall 0.701 0.708 0.737 0.772 0.730
+METEOR 0.726 0.741 0.770 0.558 0.699
+BLEU 0.803 0.822 0.699 0.512 0.709
+
+Table 2: Correlations on the Europarl dataset.
+
+
+
+Table 3
+Abstractive Summary: 
+News Commentary
+Metric Adq Flu Rank Con Avg
+MAXSIMn+d 0.812 0.869 0.893 0.869 0.861
+MAXSIMn 0.860 0.905 0.929 0.881 0.894
+Semantic-role 0.734 0.824 0.848 0.871 0.819
+ParaEval-recall 0.722 0.777 0.800 0.824 0.781
+METEOR 0.677 0.698 0.721 0.782 0.720
+BLEU 0.577 0.622 0.646 0.693 0.635
+
+Table 3: Correlations on the News Commentary dataset.
+
+
+
+Table 4
+Abstractive Summary: 
+Note that these results are substantially
+
+Metric Adq Flu Avg
+MAXSIMn+d 0.943 0.886 0.915
+MAXSIMn 0.829 0.771 0.800
+METEOR (optimized) 1.000 0.943 0.972
+METEOR 0.943 0.886 0.915
+BLEU 0.657 0.543 0.600
+
+Table 4: Correlations on the NIST MT 2003 dataset.
+.DS_Store
+

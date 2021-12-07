@@ -1,0 +1,1523 @@
+Document190.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+Table 1: Label List Used by Sequential Labeling
+(Window Size: 2)
+
+other sequential labeling methods.
+
+
+
+Table 2
+Abstractive Summary: 
+(be good)
+
+Output
+
+1st
+Labeling
+
+2nd
+Labeling
+
+Figure 1: Examples of Dependency Parsing (Window Size: 2)
+
+Corpus Type # of Sentences # of Segments
+Kyoto Training 24,283 234,685
+
+Test 9,284 89,874
+Blog Training 18,163 106,177
+
+Test 8,950 53,228
+
+Table 2: Corpus Size
+
+at the top of the parsed tree).
+
+
+
+Table 3
+Abstractive Summary: 
+For the blog test corpus, the proposed method
+using the Kyoto+Blog model had the best depen-
+
+227
+
+
+
+Test Corpus Method Training Corpus Dependency Accuracy Sentence Accuracy
+(Model)
+
+Kyoto Proposed Method Kyoto 89.87% (80766 / 89874) 48.12% (4467 / 9284)
+(Written Language) (Window Size: 3) Kyoto + Blog 89.76% (80670 / 89874) 47.63% (4422 / 9284)
+
+CaboCha Kyoto 92.03% (82714 / 89874) 55.36% (5140 / 9284)
+Blog Proposed Method Kyoto 77.19% (41083 / 53226) 41.41% (3706 / 8950)
+
+(Semi-spoken Language) (Window Size: 3) Kyoto + Blog 84.59% (45022 / 53226) 52.72% (4718 / 8950)
+CaboCha Kyoto 77.44% (41220 / 53226) 43.45% (3889 / 8950)
+
+Table 3: Dependency and Sentence Accuracies among Methods/Corpora
+
+ 88
+
+ 88.5
+
+ 89
+
+ 89.5
+
+ 90
+
+ 90.5
+
+ 91
+
+ 1  2  3  4  5
+ 0
+
+ 2e+06
+
+ 4e+06
+
+ 6e+06
+
+ 8e+06
+
+ 1e+07
+
+D
+e
+
+p
+e
+
+n
+d
+
+e
+n
+
+cy
+ A
+
+cc
+u
+
+ra
+cy
+
+ (
+%
+
+)
+
+#
+ o
+
+f 
+F
+
+e
+a
+
+tu
+re
+
+s
+
+Window Size
+
+Dependency Accuracy
+
+# of Features
+
+Figure 2: Dependency Accuracy and Number of
+Features According to Window Size (The Kyoto
+Text Corpus was used for training and testing.)
+Document184.txt
+
+Document20.txt
+
+Document34.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+For our experiments, we modified the parser1 to
+1ftp://ftp.cs.brown.edu/pub/nlparser/
+
+Base Shallow
+Parser Phrases Phrases
+Charniak parser-best 91.9 94.4
+
+reranker-best 92.8 94.8
+Finite-state shallow parser 91.7 94.3
+
+Table 1: F-scores on WSJ section 24 of output from two
+parsers on the similar tasks of base-phrase parsing and shallow-
+phrase parsing.
+Table 1 shows these systems’ bracketing accu-
+racy on both the base-phrase and shallow parsing
+tasks for WSJ section 24; each system was trained
+on WSJ sections 02-21.
+
+
+
+Table 2
+Abstractive Summary: 
+Under this condition, the one-best base-
+
+System LR LP F
+Finite-state shallow parser 91.3 92.0 91.7
+Charniak reranker-best 92.2 93.3 92.8
+Combination (λ=0.5) 92.2 94.1 93.2
+Combination (λ=0.9) 81.0 97.4 88.4
+
+Table 2: Labeled recall (LR), precision (LP), and F-scores
+on WSJ section 24 of base-phrase trees produced by the three
+possible sources of constraints.
+
+
+
+Table 3
+Abstractive Summary: 
+956
+
+
+
+Constraints Parser-best Reranker-best Oracle-best # Candidates
+Baseline (Unconstrained, 50-best) 88.92 90.24 95.95 47.9
+FS-constrained 88.44 89.50 94.10 46.2
+Reranker-constrained 89.60 90.46 95.07 46.9
+
+Combo-constrained (λ=0.5) 89.81 90.74 95.41 46.3
+Combo-constrained (λ=0.9) 89.34 90.43 95.91 47.5
+
+Table 3: Full-parse F-scores on WSJ section 24.
+Table 3 presents trials showing the effect of con-
+straining the parser under various conditions.
+
+
+
+Table 4
+Abstractive Summary: 
+The gains in performance should not be attributed
+to increasing the number of candidates nor to allow-
+
+957
+
+
+
+Constraints Parser-best Reranker-best Oracle-best # Candidates
+Baseline (Unconstrained, 50-best) 88.92 90.24 95.95 47.9
+Unconstrained ∪ FS-constrained 89.39 90.27 96.61 74.9
+Unconstrained ∪ Reranker-constrained 89.23 90.59 96.48 70.3
+Unconstrained ∪ Combo (λ=0.5) 89.28 90.78 96.53 69.7
+Unconstrained ∪ Combo (λ=0.9) 89.03 90.44 96.40 62.1
+Unconstrained (100-best) 88.82 90.13 96.38 95.2
+Unconstrained (50-best, beam×2) 89.01 90.45 96.13 48.1
+
+Table 4: Full-parse F-scores on WSJ section 24 after taking the set union of unconstrained and constrained parser output under
+the 4 different constraint conditions.
+Table 4 shows the results when taking the union
+of the constrained and unconstrained lists prior to
+reranking.
+The
+penultimate row in Table 4 shows the results with
+100-best lists output in the unconstrained condition,
+which does not improve upon the 50-best perfor-
+mance, despite an improved oracle F-score.
+The last row in Table 4 shows that the increased
+threshold yields an insignificant improvement over
+the baseline, despite a very large processing burden.
+
+
+
+Table 5
+Abstractive Summary: 
+Constraints F-score
+Baseline (Unconstrained, 50-best) 91.06
+Unconstrained ∪ Combo (λ=0.5) 91.48
+
+Table 5: Full-parse F-scores on WSJ section 23 for our best-
+performing system on WSJ section 24.
+Table 5 shows a 0.4 percent F-score improvement
+over the baseline for that section, which is statisti-
+cally significant at p < 0.001, using the stratified
+shuffling test (Yeh, 2000).
+Document153.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+The novelty of our method is the use
+
+79
+
+
+
+Table 1: Document data sets and Experiment results
+Data # of # of # of k-means NMF NMF Standard Weighted Hypergraph
+
+doc.
+Table 1 shows the result of the experiment 1.
+“NMF means” in Table 1 is the average
+of 20 entropy values for 20 clustering results.
+The
+“standard hypergraph” and “weighted hypergraph”
+in Table 1 show the results of the ensemble method
+obtained using the two hypergraph types.
+Document147.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+car cup discuss link quick seek tall thin 
+
+a ... has � �  �     
+
+a ... is � �  �     
+
+a ... man     �  � � 
+
+a ... woman     �  � � 
+
+the ... has � �  �     
+
+the ... is � �  �     
+
+the ... man     �  � � 
+
+the ... woman     �  � � 
+
+to ... a   � �  �   
+
+to ... the   � �  �   
+
+you ... a   � �  �   
+
+you ... the   � �  �   
+ 
+
+Table 1: Matrix of neighbor pairs and their corresponding middle words.
+
+
+
+Table 2
+Abstractive Summary: 
+car cup discuss link quick seek tall thin 
+
+a ... has, a ... is,  
+
+the ... has, the ... is 
+� �  �     
+
+a ... man, a ... woman,  
+
+the ... man, the ... woman 
+    �  � � 
+
+to ... a, to ... the, you ... a,  
+
+you ... the 
+  � �  �   
+
+ 
+Table 2: Clusters of neighbor pairs.
+After the clustering has been completed, to ob-
+
+tain their centroids, in analogy to Table 2 the col-
+
+umn vectors for each cluster are summed up.
+
+
+
+Table 3
+Abstractive Summary: 
+NN VB JJ 
+
+accident 978 8 15 33 0 0 lunch 741 198 60 32 1 0 
+
+belief 972 17 11 64 0 0 maintain 4 993 3 0 60 0 
+
+birth 968 15 18 47 0 0 occur 15 973 13 0 43 0 
+
+breath 946 21 33 51 0 0 option 984 10 7 5 0 0 
+
+brief 132 50 819 8 0 63 pleasure 931 16 54 60 1 0 
+
+broad 59 7 934 0 0 82 protect 4 995 1 0 34 0 
+
+busy 22 22 956 0 1 56 prove 5 989 6 0 53 0 
+
+catch 71 920 9 3 39 0 quick 47 14 938 1 0 58 
+
+critical 51 13 936 0 0 57 rain 881 64 56 66 2 0 
+
+cup 957 23 21 43 1 0 reform 756 221 23 23 3 0 
+
+dangerous 37 29 934 0 0 46 rural 66 13 921 0 0 46 
+
+discuss 3 991 5 0 28 0 screen 842 126 32 42 5 0 
+
+drop 334 643 24 24 34 1 seek 8 955 37 0 69 0 
+
+drug 944 10 46 20 0 0 serve 20 958 22 0 107 0 
+
+empty 48 187 765 0 0 64 slow 43 141 816 0 8 48 
+
+encourage 7 990 3 0 46 0 spring 792 130 78 102 6 0 
+
+establish 2 995 2 0 58 0 strike 544 424 32 25 22 0 
+
+expensive 55 14 931 0 0 44 suit 200 789 11 40 8 0 
+
+familiar 42 17 941 0 0 72 surprise 818 141 41 44 5 3 
+
+finance 483 473 44 9 18 0 tape 868 109 23 31 0 0 
+
+grow 15 973 12 0 61 0 thank 14 983 3 0 35 0 
+
+imagine 4 993 4 0 61 0 thin 32 58 912 0 2 90 
+
+introduction 989 0 11 28 0 0 tiny 27 1 971 0 0 49 
+
+link 667 311 23 12 4 0 wide 9 4 988 0 0 115 
+
+lovely 41 7 952 0 0 44 wild 220 6 774 0 0 51 
+
+ 
+Table 3: List of 50 words and their values (scaled by 1000) from each of the three cluster centroids.
+The list of words is included in Table 3 (columns 
+
+1 and 8).
+Columns 2 to 4 and 9 to 11 of Table 3 
+
+show the centroid values corresponding to each 
+
+word after the procedure described in the previous 
+
+section has been conducted, that is, the 2000 most 
+
+frequent neighbor pairs of the 50 words were clus-
+
+tered into three groups.
+To provide a more objective measure for the quality 
+
+of the results, columns 5 to 7 and 12 to 14 of Table 3 
+
+show the occurrence frequencies of the 50 words as 
+
+nouns, verbs, and adjectives in the manually POS-
+
+tagged Brown corpus, which is probably almost error 
+
+free (Kuςera, & Francis, 1967).
+Document146.txt
+
+Document152.txt
+
+Document35.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+(%) λ-WASP WASP SCISSOR Z&C
+
+Precision 91.95 87.19 92.08 96.25
+
+Recall 86.59 74.77 72.27 79.29
+
+F-measure 89.19 80.50 80.98 86.95
+
+Table 1: Performance of various parsing algorithms on the larger GEOQUERY corpus.
+Table 1 summarizes the results at the end
+
+of the learning curves (792 training examples for λ-
+WASP, WASP and SCISSOR, 600 for Z&C).
+
+
+
+Table 2
+Abstractive Summary: 
+regrouping 90.73 83.07
+
+(%) Precision Recall
+
+λ-WASP 91.95 86.59
+w/o two-level rules 88.46 84.32
+
+and w/o type checking 65.45 63.18
+
+Table 2: Performance of λ-WASP with certain components of the algorithm removed.
+Table 2 shows the results.
+Document21.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+�,
+�,Æ�,ø↔ a,e,i,o,u H. ↔ b,p,v�H, , �H↔ t h. ↔ j,g	 ↔ d,z ¨,Z↔ ’,c,a,e,i,o,u��↔ q,g,k ¼↔ k,c,sø
+ ↔ y,i,e,j �è↔ a,e
+Table 1: A sample of the letter equivalence classes
+for fuzzy string matching.
+
+
+
+Table 2
+Abstractive Summary: 
+Conversion None None
+Data-driven No No No Yes
+
+Table 2: Comparison of the word-similarity models.
+
+
+
+Table 3
+Abstractive Summary: 
+Individual
+
+�,
+�,Æ�,Z→ a H. → b �H, → t�è→ a �H→ th h. → jh, è→ h p→ kh X, 	�→ d	X, 	 → th P→ r 	P→ z�,�→ s ��→ sh ¨→ ’	̈
+→ g
+
+	¬→ f ��→ q¼→ k È→ l �→ m	à→ n ð→ w ø
+ → y
+Table 3: Arabic Romanization for Levenshtein dis-
+tance.
+
+
+
+Table 4
+Abstractive Summary: 
+�
+�K�Q���� istratyjya strategic
+10 All ½	KQ 	̄ frnk French
+
+Table 4: A sample of the errors made by the word-
+similarity metrics.
+
+
+
+Table 5
+Abstractive Summary: 
+869
+
+
+
+Method Accuracy
+Levenshtein 69.3
+
+ALINE 71.9
+Fuzzy Match 74.6
+Bootstrapping 74.6
+
+Table 5: Precision of the various algorithms on the
+NER detection task.
+
+
+
+Table 6
+Abstractive Summary: 
+Metric Arabic Romanized English
+1 Both YJ.« ’bd Abdallah
+2 Bootstrap YK
+YªË� al’dyd Alhadidi
+3 Fuzzy Match 	áÖ �ß thmn Othman
+
+Table 6: A sample of errors made on the NER detec-
+tion task.
+Document185.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+Table 1: Evaluation criteria.
+
+
+
+Table 2
+Abstractive Summary: 
+In the algorithm, parsing states are represented by
+triples 〈S, I,A〉, where S is the stack that keeps the
+words being under consideration, I is the list of re-
+
+DA RA CR
+(Yamada and Matsumoto, 2003) 90.3 91.6 38.4
+
+(Nivre and Scholz, 2004) 87.3 84.3 30.4
+(Isozaki et al., 2004) 91.2 95.7 40.7
+
+(McDonald et al., 2005) 90.9 94.2 37.5
+(McDonald and Pereira, 2006) 91.5 N/A 42.1
+(Corston-Oliver et al., 2006) 90.8 93.7 37.6
+
+Our Base Parser 90.9 92.6 39.2
+
+Table 2: Comparison of parser performance.
+Table 2 summarizes their dependency ac-
+curacies based on three evaluation criteria shown in
+Table 1.
+The last row in Table 2 shows the accuracies of
+our base dependency parser.
+
+
+
+Table 3
+Abstractive Summary: 
+1 the 13,252 1,000 watch 29
+
+2 , 12,858
+...
+
+...
+...
+
+...
+...
+
+... 2,000 healthvest 12
+
+100 week 261
+...
+
+...
+...
+
+...
+...
+
+... 3,000 whoop 7
+
+500 estate 64
+...
+
+...
+...
+
+...
+...
+
+...
+
+Table 3: Word list.
+Document191.txt
+
+Document9.txt
+
+Document187.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+base +tpos +reor +spos
+
+Beam size = 50
+w/o cache 1, 820 2, 170 2, 970 3, 260
+w/ cache −50 −110 −190 −210
+Beam size = 100
+w/o cache 2, 900 4, 350 5, 960 6, 520
+w/ cache −175 −410 −625 −640
+
+Table 1: Translation efficiency results.
+Table 1 shows translation efficiency results (mea-
+sured in seconds) given two different beam search sizes.
+Document193.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+The hypothesis is that optimizing
+
+1http://openccg.sf.net
+
+10
+
+
+
+Fitness Metric Accuracy
+COUNT 18.5
+RELATIVE 22.0
+WEIGHTED 20.4
+
+Table 1: Final accuracy of the metrics
+
+parsing coverage with a GA scheme would correlate
+with improved category-accuracy.
+Document37.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+The table
+
+Romanian English attributes
+ı̂nfrumuseţa beautifying strong, verb
+notabil notable weak, adj
+plin de regret full of regrets strong, adj
+sclav slaves weak, noun
+
+Table 1: Examples of entries in the Romanian sub-
+jectivity lexicon
+
+also shows the reliability of the expression (weak or
+strong) and the part of speech – attributes that are
+provided in the English subjectivity lexicon.
+Table 1 shows examples of en-
+tries in the Romanian lexicon, together with their
+corresponding original English form.
+
+
+
+Table 2
+Abstractive Summary: 
+S O B W Total
+S 53 6 9 0 68
+O 1 27 1 0 29
+B 5 3 18 0 26
+W 0 0 0 27 27
+Total 59 36 28 27 150
+
+Table 2: Agreement on 150 entries in the Romanian
+lexicon
+
+Without counting the wrong translations, the
+agreement is measured at 0.80, with a Kappa κ =
+
+978
+
+
+
+0.70, which indicates consistent agreement.
+
+
+
+Table 3
+Abstractive Summary: 
+979
+
+
+
+Measure Subjective Objective All
+subj = at least two strong; obj = at most two weak
+
+Precision 80.00 56.50 62.59
+Recall 20.51 48.91 33.53
+F-measure 32.64 52.52 43.66
+subj = at least two strong; obj = at most three weak
+Precision 80.00 56.85 61.94
+Recall 20.51 61.03 39.08
+F-measure 32.64 58.86 47.93
+
+Table 3: Evaluation of the rule-based classifier
+
+recall, and thus the classifier could be used to har-
+vest subjective sentences from unlabeled Romanian
+data (e.g., for a subsequent bootstrapping process).
+For this purpose, we use the Romanian lemmatizer
+developed by Ion and Tufiş (Ion, 2007), which has
+an estimated accuracy of 98%.2
+
+Table 3 shows the results of the rule-based classi-
+fier.
+
+
+
+Table 4
+Abstractive Summary: 
+all sentences Uncertain removed
+pair agree κ agree κ (%) removed
+Ro1 & Ro2 0.83 0.67 0.89 0.77 23
+En & Ro1 0.77 0.54 0.86 0.73 26
+En & Ro2 0.78 0.55 0.91 0.82 20
+
+Table 4: Agreement on the data set of 173 sentences.
+Table 4 shows the
+pairwise agreement figures and the Kappa (κ) calcu-
+lated for the three annotators.
+
+
+
+Table 5
+Abstractive Summary: 
+We therefore decided to
+use a different approach where we automatically
+annotate the English side of an existing English-
+Romanian corpus, and subsequently project the an-
+notations onto the Romanian side of the parallel cor-
+
+981
+
+
+
+Precision Recall F-measure
+high-precision 86.7 32.6 47.4
+high-coverage 79.4 70.6 74.7
+
+Table 5: Precision, recall, and F-measure for the
+two OpinionFinder classifiers, as measured on the
+MPQA corpus.
+
+
+
+Table 6
+Abstractive Summary: 
+Classifier Subjective Objective All
+high-precision 1,629 2,334 3,963
+high-coverage 5,050 5,578 10,628
+
+Table 6: Subjective and objective training sentences
+automatically annotated with OpinionFinder.
+
+
+
+Table 7
+Abstractive Summary: 
+Subjective Objective All
+projection source: OF high-precision classifier
+Precision 65.02 69.62 64.48
+Recall 82.41 47.61 64.48
+F-measure 72.68 56.54 64.68
+projection source: OF high-coverage classifier
+Precision 66.66 70.17 67.85
+Recall 81.31 52.17 67.85
+F-measure 72.68 56.54 67.85
+
+Table 7: Evaluation of the machine learning classi-
+fier using training data obtained via projections from
+data automatically labeled by OpinionFinder (OF).
+Table 7 shows the results.
+Document23.txt
+
+Document144.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+42
+
+
+
+Corp MIN WDS TYP CTX TIME
+BNC 1 152k 5.7m 608k 13m 9s
+BNC 20 68k 5.6m 588k 9m 30s
+OEC 2 269k 27.5m 994k 1hr 40m
+OEC 20 128k 27.3m 981k 1hr 27m
+OEC 200 48k 26.7m 965k 1hr 10m
+Itwac 20 137k 24.8m 1.1m 1hr 16m
+
+Table 1: Thesaurus creation jobs and timings
+
+• the number of triples (types) that these words
+occur in (TYP)
+
+• the number of contexts (types) that these words
+occur in (CTX)
+
+We have made a number of runs with different
+values of MIN for BNC, OEC and Itwac and present
+details for some representative ones in Table 1.
+Document150.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+Figure 1: The tree representation of feature fj  
+
+ 
+Table 1: Encoding frequent patterns with DFS array 
+
+representation 
+Level 0 1 2 3 2 1 2 1 2 2
+Label Root k m r p m p o p q
+Item fj fk fm fr fp fm fp fo fp fq
+
+ 
+However, traversing arrays is much more effi-
+
+cient than visiting trees.
+
+
+
+Table 2
+Abstractive Summary: 
+Table 2: Experimental results for CoNLL-2000 shal-
+low parsing task 
+
+CoNLL-2000 F1 Mining Time 
+Training 
+
+Time 
+Testing 
+Time 
+
+Linear Kernel 93.15 N/A 0.53hr 2.57s
+Polynomial(d=2) 94.19 N/A 11.52hr 3189.62s
+Polynomial(d=3) 93.95 N/A 19.43hr 6539.75s
+Our Method 
+(d=2,sup=0.01) 
+
+93.71 <10s 0.68hr 6.54s
+
+Our Method 
+(d=3,sup=0.01) 
+
+93.46 <15s 0.79hr 9.95s
+
+Table 3: Classification time performance of enu-
+meration and array visiting techniques 
+
+Array visiting Enumeration CoNLL-2000 
+d=2 d=3 d=2 d=3 
+
+Testing time 6.54s 9.95s 4.79s 11.73s
+Chunking speed 
+(words/sec) 7244.19 4761.50 9890.81 4038.95
+
+It is not surprising that the best performance was 
+obtained by the classical polynomial kernel.
+4.1 Results 
+Table 2 lists the experimental results on the 
+CoNLL-2000 shallow parsing task.
+Document178.txt
+
+Document179.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+The lemmatized
+
+1http://domino.watson.ibm.com/library/CyberDig.nsf (key-
+word=RC22176)
+
+2http://www.cs.cmu.edu/∼alavie/METEOR
+
+182
+
+
+
+Table 1: Translation results as increasing amount of training
+data in IWSLT06 CSTAR track
+
+System AER BLEU METEOR
+
+50K nonlem 0.217 0.158 0.427
+lemma 0.199 0.167 0.431
+
+100K nonlem 0.178 0.182 0.457
+lemma 0.177 0.188 0.463
+
+300K nonlem 0.150 0.223 0.501
+lemma 0.132 0.217 0.505
+
+400K nonlem 0.136 0.231 0.509
+lemma 0.102 0.224 0.507
+
+500K nonlem 0.119 0.235 0.519
+lemma 0.104 0.241 0.522
+
+600K nonlem 0.095 0.238 0.535
+lemma 0.069 0.248 0.536
+
+Table 2: Statistical significance test in terms of BLEU:
+sys1=non-lemma, sys2=lemma
+
+Data size Diff(sys1-sys2)
+50K -0.092 [-0.0176,-0.0012]
+100K -0.006 [-0.0155,0.0039]
+300K 0.0057 [-0.0046,0.0161]
+400K 0.0074 [-0.0023,0.0174]
+500K -0.0054 [-0.0139,0.0035]
+600K -0.0103 [-0.0201,-0.0006]
+
+translations did not outperform the non-lemmatized
+ones uniformly.
+
+
+
+Table 2
+Abstractive Summary: 
+In particular, our results
+revealed large amounts of data of 500 K and 600
+
+3http://projectile.is.cs.cmu.edu/research/public/tools/bootStrap
+/tutorial.htm
+
+Table 3: Competitive scores (BLEU) for non-lemmatization and
+lemmatization using randomly extracted corpora
+
+System 100K 300K 400K 600K total
+
+lemma 10/11 5.5/11 6.5/11 5/7 27/40
+nonlem 1/11 5.5/11 4.5/11 2/7 13/40
+
+K was improved by the lemmatization while it has
+been found impossible in most published results.
+
+
+
+Table 3
+Abstractive Summary: 
+Besides the phrase
+translation model, we used this approach to integrate
+
+Table 4: Effect of linear interpolation
+
+lemma nonlemma interpolation
+open track 0.1938 0.1993 0.2054
+
+the three other features: phrase inverse probability,
+lexical probability, and lexical inverse probability.
+Table 3 shows the “scoreboard” of
+non-lemmatized and lemmatized results in terms of
+BLEU.
+Document151.txt
+
+Document145.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+pluralize nouns
+stopwords → ∅
+
+Table 1: Example rules from ‘Lucinda’, used for generat-
+ing recogniser input from OBO files
+
+names are generally short, non-compositional and often
+polysemous with ordinary English words such as Cat or
+Rat.
+In general the bare phrase “A B Xase” will
+refer to the activity, so the ruleset in Table 1 deletes the
+word “activity” from the GO term.
+In
+fact, our ruleset in Table 1 explicitly disallows GO term
+synonyms ending in “ synthesis” or “ formation” since
+they do not necessarily represent biological processes.
+
+
+
+Table 2
+Abstractive Summary: 
+GO term Regex pair
+bud neck 2585\s4580\s
+
+2585\s4580\sX162
+bud neck polarisome 2585\s4580\s622\s
+
+2585\s4580\s622\sX163
+polarisome 622\s
+
+622\sX164
+
+Table 2: Mapping in Fig.
+Document22.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+In this paper, we calcu-
+late the densities of seven kinds of function words 5
+
+5including determiners/quantifiers, all pronouns, different
+pronoun types: Wh, 1st, 2nd, and 3rd person pronouns, prepo-
+
+Dataset Type Source Number
+
+JC
+(+) the Japan Times newspaper
+
+and Model English Essay
+16,857
+
+(-)
+HEL (Hiroshima English
+Learners’ Corpus) and JLE
+(Japanese Learners of En-
+glish Corpus)
+
+17,301
+
+CC
+(+) the 21st Century newspaper 3,200
+
+(-)
+CLEC (Chinese Learner Er-
+ror Corpus) 3,199
+
+Table 1: Corpora ((+): correct; (-): erroneous)
+
+respectively as 7 features.
+Table 1 gives the details of our corpora.
+
+
+
+Table 2
+Abstractive Summary: 
+We also noticed that
+
+86
+
+
+
+Dataset Feature A (-)F (-)R (-)P (+)F (+)R (+)P
+
+JC
+
+LSP 79.63 80.65 85.56 76.29 78.49 73.79 83.85
+LC 69.55 71.72 77.87 66.47 67.02 61.36 73.82
+PLM 61.60 55.46 50.81 64.91 62 70.28 58.43
+SC 53.66 57.29 68.40 56.12 34.18 39.04 32.22
+FWD 68.01 72.82 86.37 62.95 61.14 49.94 78.82
+LC + PLM + SC + FWD 71.64 73.52 79.38 68.46 69.48 64.03 75.94
+LSP + LC + PLM + SC + FWD 81.75 81.60 81.46 81.74 81.90 82.04 81.76
+
+CC
+
+LSP 78.19 76.40 70.64 83.20 79.71 85.72 74.50
+LC 63.82 62.36 60.12 64.77 65.17 67.49 63.01
+PLM 55.46 64.41 80.72 53.61 40.41 30.22 61.30
+SC 50.52 62.58 87.31 50.64 13.75 14.33 13.22
+FWD 61.36 60.80 60.70 60.90 61.90 61.99 61.80
+LC + PLM + SC + FWD 67.69 67.62 67.51 67.77 67.74 67.87 67.64
+LSP + LC + PLM + SC + FWD 79.81 78.33 72.76 84.84 81.10 86.92 76.02
+
+Table 2: The Experimental Results (A: overall accuracy; (-): erroneous sentences; (+): correct sentences; F:
+F-score; R: recall; P: precision)
+
+Dataset Model A (-)F (-)R (-)P
+
+JC
+Ours 81.39 81.25 81.24 81.28
+Word 58.87 33.67 21.03 84.73
+ALEK 54.69 20.33 11.67 78.95
+
+CC
+Ours 79.14 77.81 73.17 83.09
+Word 58.47 32.02 19.81 84.22
+ALEK 55.21 22.83 13.42 76.36
+
+Table 3: The Comparison Results
+
+LSPs play dominating role in achieving the results.
+
+
+
+Table 3
+Abstractive Summary: 
+This is
+based on the assumption that if the MT results can
+be accurately distinguished from human references
+
+Dataset A (-)F (-)R (-)P
+JC(Train)+nonparallel(Test) 72.49 68.55 57.51 84.84
+JC(Train)+parallel(Test) 71.33 69.53 65.42 74.18
+JC + CC 79.98 79.72 79.24 80.23
+JC(Train)+ CC(Test) 55.62 41.71 31.32 62.40
+CC(Train)+ JC(Test) 57.57 23.64 16.94 39.11
+
+Table 4: The Cross-domain Results of our Method
+
+by our technique, the MT results are not natural and
+may contain errors as well.
+
+
+
+Table 4
+Abstractive Summary: 
+Empirical evaluating
+using diverse data demonstrated the effectiveness of
+
+9One LDC data contains 14,604 low ranked (score 1-3) ma-
+chine translations and the corresponding human references; the
+other LDC data contains 808 high ranked (score 3-5) machine
+translations and the corresponding human references
+
+87
+
+
+
+Data Feature A (-)F (-)R (-)P (+)F (+)R (+)P
+Low-ranked data (1-3 score) LSP 84.20 83.95 82.19 85.82 84.44 86.25 82.73
+
+LSP+LC+PLM+SC+FWD 86.60 86.84 88.96 84.83 86.35 84.27 88.56
+High-ranked data (3-5 score) LSP 71.74 73.01 79.56 67.59 70.23 64.47 77.40
+
+LSP+LC+PLM+SC+FWD 72.87 73.68 68.95 69.20 71.92 67.22 77.60
+
+Table 5: The Results on Machine Translation Data
+
+our techniques.
+Document36.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+This
+
+970
+
+
+
+Slovene Arabic Dutch Czech
+SDT PADT Alpino PDT
+
+# T 29 54 195 1249
+# S 1.5 1.5 13.3 72.7
+
+%-NPS 22.2 11.2 36.4 23.2
+%-NPA 1.8 0.4 5.4 1.9
+
+%-C 9.3 8.5 4.0 8.5
+%-A 8.8 - - 1.3
+
+Table 1: Overview of the data sets (ordered by size),
+where # S * 1000 = number of sentences, # T * 1000
+= number of tokens, %-NPS = percentage of non-
+projective sentences, %-NPA = percentage of non-
+projective arcs, %-C = percentage of conjuncts, %-A
+= percentage of auxiliary verbs.
+Table 1 thus does not give figures verb groups.
+
+
+
+Table 2
+Abstractive Summary: 
+By contrast, there is no significant improve-
+ment for either SDT or PADT, and even a small drop
+
+N-Proj Proj P-Proj
+SDT 77.27 76.63∗∗ 77.11
+
+PADT 76.96 77.07∗ 77.07∗
+Alpino 82.75 83.28∗∗ 87.08∗∗
+
+PDT 83.41 83.32∗∗ 84.42∗∗
+
+Table 2: ASU for pseudo-projective parsing with
+MaltParser.
+Table 2 presents the un-
+labeled attachment score results (ASU ), compar-
+ing the pseudo-projective parsing technique (P-Proj)
+with two baselines, obtained by training the strictly
+projective parser on the original (non-projective)
+training data (N-Proj) and on projectivized train-
+ing data with no augmentation of dependency labels
+(Proj).
+
+
+
+Table 3
+Abstractive Summary: 
+1 2 3 >3
+SDT 88.4 9.1 1.7 0.84
+
+PADT 66.5 14.4 5.2 13.9
+Alpino 84.6 13.8 1.5 0.07
+
+PDT 93.8 5.6 0.5 0.1
+
+Table 3: The number of lifts for non-projective arcs.
+
+
+
+Table 4
+Abstractive Summary: 
+If it did, one would expect
+that the error reduction for the pseudo-projective
+transformation would be much closer to Proj when
+
+None Coord VG
+SDT 77.27 79.33∗∗ 77.92∗∗
+
+PADT 76.96 79.05∗∗ -
+Alpino 82.75 83.38∗∗ -
+
+PDT 83.41 85.51∗∗ 83.58∗∗
+
+Table 4: ASU for coordination and verb group trans-
+formations with MaltParser (None = N-Proj).
+
+
+
+Table 5
+Abstractive Summary: 
+The last column in table 4 shows
+that the expected increase in accuracy for PDT is ac-
+
+973
+
+
+
+Algorithm N-Proj Proj P-Proj
+Eisner 81.79 83.23 86.45
+
+CLE 86.39
+
+Table 5: Pseudo-projective parsing results (ASU ) for
+Alpino with MSTParser.
+Table 5 presents ASU results for MSTParser in
+combination with pseudo-projective parsing applied
+to the Alpino treebank of Dutch.3 The first row
+contains the result for Eisner’s algorithm using no
+transformation (N-Proj), projectivized training data
+(Proj), and pseudo-projective parsing (P-Proj).
+
+
+
+Table 6
+Abstractive Summary: 
+None Coord VG
+ASU 84.5 83.5 84.5
+
+Table 6: Coordination and verb group transforma-
+tions for PDT with the CLE algorithm.
+
+
+
+Table 7
+Abstractive Summary: 
+Dev Eval Niv McD
+SDT ASU 80.40 82.01 78.72 83.17
+
+ASL 71.06 72.44 70.30 73.44
+PADT ASU 78.97 78.56 77.52 79.34
+
+ASL 67.63 67.58 66.71 66.91
+Alpino ASU 87.63 82.85 81.35 83.57
+
+ASL 84.02 79.73 78.59 79.19
+PDT ASU 85.72 85.98 84.80 87.30
+
+ASL 78.56 78.80 78.42 80.18
+
+Table 7: Evaluation on CoNLL-X test data; Malt-
+Parser with all transformations (Dev = development,
+Eval = CoNLL test set, Niv = Nivre et al.
+Table 7 gives the results for both develop-
+ment (cross-validation for SDT, PADT, and Alpino;
+
+974
+
+
+
+development set for PDT) and final test, compared
+to the two top performing systems in the shared
+task, MSTParser with approximate second-order
+non-projective parsing (McDonald et al., 2006) and
+MaltParser with pseudo-projective parsing (but no
+coordination or verb group transformations) (Nivre
+et al., 2006).
+Document192.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+4
+
+
+
+Region sentences words
+East England 855 10471
+East Midlands 1944 16924
+London 24836 244341
+Northwest England 3219 27070
+Northeast England 1012 10199
+Scotland 2886 27198
+Southeast England 11090 88915
+Southwest England 939 7107
+West Midlands 960 12670
+Wales 2338 27911
+Yorkshire 1427 19092
+
+Table 1: Subcorpus size
+
+3 Experiment and Results
+
+The experiment was run on the syntactically anno-
+tated part of the International Corpus of English,
+Great Britain corpus (ICE-GB).
+
+
+
+Table 2
+Abstractive Summary: 
+Significant differences (at p < 0.05) were found
+
+Region Significantly different (p < 0.05)
+London East Midlands, NW England
+
+SE England, Scotland
+SE England Scotland
+
+Table 2: Significant differences, leaf-ancestor paths
+
+Region Significantly different (p < 0.05)
+London East Midlands, NW England,
+
+NE England, SE England,
+Scotland, Wales
+
+SE England London, East Midlands,
+NW England, Scotland
+
+Scotland London, SE England, Yorkshire
+
+Table 3: Significant differences, POS trigrams
+
+when comparing the largest regions, but no signifi-
+cant differences were found when comparing small
+regions to other small regions.
+Document186.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+Tokens Unseen
+Train 0-18 38,219 912,344 0
+Test 22-24 5,462 129,654 2.81%
+
+Table 1: Data set splits used for English
+
+As Table 2 shows HunPos achieves performance
+comparable to TnT for English.
+
+
+
+Table 2
+Abstractive Summary: 
+seen unseen overall
+TnT 96.77% 85.91% 96.46%
+HunPos 1 96.76% 86.90% 96.49%
+HunPos 2 96.88% 86.13% 96.58%
+
+Table 2: WSJ tagging accuracy, HunPos with first
+and second order emission/lexicon probabilities
+
+If we follow Banko and Moore (2004) and con-
+struct a full (no OOV) morphological lexicon from
+the tagged version of the test corpus, we obtain
+96.95% precision where theirs was 96.59%.
+Tokens Unseen
+Train 0-18 38,219 912,344 0
+Test 22-24 5,462 129,654 2.81%
+
+Table 1: Data set splits used for English
+
+As Table 2 shows HunPos achieves performance
+comparable to TnT for English.
+
+
+
+Table 3
+Abstractive Summary: 
+Tokens Unseens OOV
+Train 63,075 1,044,914 0 N.A
+Test 7,008 116,101 9.59% 5.64%
+
+Table 3: Data set splits used for Hungarian.
+
+
+
+Table 4
+Abstractive Summary: 
+morph lex order seen unseen overall
+
+no
+1 98.34% 88.96% 97.27%
+2 98.58% 87.97% 97.40%
+
+yes
+1 98.32% 96.01% 98.03%
+2 98.56% 95.96% 98.24%
+
+Table 4: Tagging accuracy for Hungarian of HunPos
+with and without morphological lexicon and with
+first and second order emission/lexicon probabili-
+ties.
+Document8.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+training adaptation
+
+BC WSJ (%) examples examples
+21 nouns 6.7 6.8 61.1 310 406
+9 nouns 7.9 8.6 65.8 276 416
+
+Table 1: The average number of senses in BC and
+WSJ, average MFS accuracy, average number of BC
+training, and WSJ adaptation examples per noun.
+The row 21
+nouns in Table 1 shows some information about
+these 21 nouns.
+The row 9 nouns in Table 1 gives some
+information for this set of 9 nouns.
+
+
+
+Table 2
+Abstractive Summary: 
+Accuracy % adaptation examples needed
+r a a-estPred a-c-estPred
+
+50%: 61.1 8 7 (0.88) 5 (0.63) 4 (0.50)
+60%: 64.5 10 9 (0.90) 7 (0.70) 5 (0.50)
+70%: 68.0 15 12 (0.80) 9 (0.60) 6 (0.40)
+80%: 71.5 23 16 (0.70) 12 (0.52) 9 (0.39)
+90%: 74.9 46 24 (0.52) 21 (0.46) 15 (0.33)
+100%: 78.4 100 51 (0.51) 38 (0.38) 29 (0.29)
+
+Table 2: Annotation savings and percentage of adap-
+tation examples needed to reach various accuracies.
+Starting from
+the mid-point 61.1% accuracy, which represents a
+50% accuracy increase from 43.7%, we show in
+Table 2 the percentage of adaptation examples re-
+quired by the various approaches to reach certain
+levels of WSD accuracies.
+.DS_Store
+

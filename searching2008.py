@@ -1,12 +1,14 @@
 import os
+import nltk
+nltk.download('punkt')
 from nltk.tokenize import sent_tokenize
 import re
 
-path_to_text_files = "./2007/TXTs/"
+path_to_text_files = "./2008/TXTs"
 for filename in os.listdir(path_to_text_files):
 
     absolute_text_path = os.path.join(path_to_text_files, filename)
-    with open(absolute_text_path, 'r', encoding='utf-8') as f, open('./2007/TXTs/outputrough.txt','a', encoding='utf-8') as fw:
+    with open(absolute_text_path, 'r', encoding='utf-8') as f, open('./results/outputrough08.txt','a', encoding='utf-8') as fw:
         fw.write(filename)
         fw.write("\n")
         fw.write("\n")
@@ -26,9 +28,9 @@ for filename in os.listdir(path_to_text_files):
                 result_string_sentence.append(token)
 
         for tableNos in range(len(result_string_table_caption)):
-            fw.write(f"Table {tableNos+1}\n")
-            fw.write(result_string_table_caption[tableNos] + "\n")
+            fw.write(f"\n\n\nTable {tableNos+1}\n")
             fw.write("Abstractive Summary: \n")
+            fw.write(result_string_table_caption[tableNos] + "\n")
             for abstracts in result_string_sentence:
                 t = f"Table {tableNos+1} "
                 if re.search(t, abstracts):

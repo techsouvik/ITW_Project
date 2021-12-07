@@ -1,0 +1,2334 @@
+Document225.txt
+
+Document231.txt
+
+Document219.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+4 Experiments on HyDT
+
+Property Count Percentage
+All structures 1865
+
+Gap degree
+Gd(0) 1603 85.9%
+Gd(1) 259 13.89%
+Gd(2) 0 0%
+Gd(3) 3 0.0016%
+
+Edge degree
+Ed(0) 1603 85.9%
+Ed(1) 254 13.6%
+Ed(2) 6 0.0032%
+Ed(3) 1 0.0005%
+Ed(4) 1 0.0005%
+
+Projective 1603 85.9%
+Planar 1639 87.9%
+
+Non-projective 36 1.93%
+& planar
+
+Well-nested 1865 100%
+
+Table 1: Results on HyDT
+
+In this section, we present an experimental eval-
+uation of the graph constraints mentioned in the
+previous section on the dependency structures in
+
+12
+
+
+
+_ROOT_ tab     raat  lagabhag   chauthaaii   Dhal__chukii__thii     jab     unheM    behoshii__sii  aaiii
+
+then   night  about      one−fourth    over    be.PastPerf.
+
+
+
+Table 2
+Abstractive Summary: 
+isake baad vah jamaan shaah ko
+aur-phir shaah shujaa ko 1795 meM
+milaa
+
+Non-projective Class Count %
+Relative co-relatives constructions 18 6.8 %
+Extraposed realtive clause constructions 101 38.0 %
+Intra-clausal non-projectivity 12 4.5 %
+Paired connectives 33 12.4 %
+ki complement clauses 52 19.5 %
+Genetive relation split by a verb modifier 10 3.8 %
+Phrase splitting a co-ordinating structure 4 1.5 %
+Shared argument splits the non-finite clause 10 3.8 %
+Others 26 9.8 %
+
+Table 2: Non-projectivity class distribution in HyDT
+
+5.8 Shared argument splits the non finite
+clause
+
+In the example in 4b, hama is annotated as the ar-
+gument of the main verb baawa karate the.
+Document190.txt
+
+Document184.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+, N do
+for o′ 6= o get
+
+V = maxo′
+{
+4(o, o′) + wTo′,kφ(f̄j , ēi)
+
+}
+o∗ = arg maxo′
+
+{
+4(o, o′) + wTo′,kφ(f̄j , ēi)
+
+}
+if wTo,kφ(f̄j , ēi) < V then
+
+wo,k+1 = wo,k + ηφ(f̄j , ēi)
+wo∗,k+1 = wo∗,k − ηφ(f̄j , ēi)
+
+k = k + 1
+until converge
+Output: wo,k+1 ∀o ∈ Ω
+
+Table 1: Perceptron-based structure learning.
+
+
+
+Table 2
+Abstractive Summary: 
+, eir ]
+
+Table 2: The environment for the feature extraction.
+
+
+
+Table 3
+Abstractive Summary: 
+Contrasting the direct use of the reorder-
+ing probabilities used in (Zens and Ney, 2006),
+we utilize the probabilities to adjust the word
+distance–based reordering cost, where the reorder-
+ing cost of a sentence is computed as Po(f , e) =
+
+243
+
+
+
+Settings three–class setup five–class setup
+Classes d < 0 d = 0 d > 0 d ≤ −5 −5 < d < 0 d = 0 0 < d < 5 d ≥ 5
+Train 181, 583 755, 854 181, 279 82, 677 98, 907 755, 854 64, 881 116, 398
+Test 5, 025 21, 106 5, 075 2, 239 2, 786 21, 120 1, 447 3, 629
+
+Table 3: Data statistics for the classification experiments.
+
+
+
+Table 4
+Abstractive Summary: 
+System three–class setup task
+Precision d < 0 d = 0 d > 0 Training time (hours)
+
+Lexicalized 77.1± 0.1 55.7± 0.1 86.5± 0.1 49.2± 0.3 1.0
+ME 83.7± 0.3 67.9± 0.3 90.8± 0.3 69.2± 0.1 58.6
+DPR 86.7± 0.1 73.3± 0.1 92.5± 0.2 74.6± 0.5 27.0
+
+System five–class setup task
+Precision d ≤ −5 −5 < d < 0 d = 0 0 < d < 5 d ≥ 5 Training Time (hours)
+
+Lexicalized 74.3± 0.1 44.9± 0.2 32.0± 1.5 86.4± 0.1 29.2± 1.7 46.2± 0.8 1.3
+ME 80.0± 0.2 52.1± 0.1 54.7± 0.7 90.4± 0.2 63.9± 0.1 61.8± 0.1 83.6
+DPR 84.6± 0.1 60.0± 0.7 61.4± 0.1 92.6± 0.2 75.4± 0.6 68.8± 0.5 29.2
+
+Table 4: Overall precision and class-specific F1 scores [%] using different number of orientation classes.
+Table 4 depicts the classification results ob-
+tained, where we observed consistent improve-
+ments for the DPR model over the baseline and
+the ME models.
+
+
+
+Table 5
+Abstractive Summary: 
+Tasks Measure MOSES DPR
+BLEU [%] 44.7± 1.2 47.1± 1.3
+
+CH–EN word accuracy 76.5± 0.6 76.1± 1.5
+NIST 8.82± 0.11 9.04± 0.26
+
+METEOR [%] 66.1± 0.8 66.4± 1.1
+
+Table 5: Four evaluations for the MT experiments.
+Table 5 shows the translation results, where we
+observe consistent improvements on most evalua-
+tions.
+Document20.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+On this task, the parallel and the
+
+1http://www.nist.gov/speech/tests/mt
+
+Dataset # of sentences
+aren zhen
+
+dev 1797 1664
+nist02 1043 878
+nist03 663 919
+
+Table 1: Statistics over the NIST dev/test sets.
+Table 1 reports
+statistics computed over these data sets.
+
+
+
+Table 2
+Abstractive Summary: 
+aren zhen aren zhen
+
+phrase lattice 8.57 7.91 10.30 8.65
+hypergraph – – 8.19 8.11
+
+Table 2: Average time for computing envelopes.
+6.3 MERT Results
+
+Table 2 shows runtime experiments for the hyper-
+graph MERT implementation in comparison with
+the phrase-lattice implementation on both the aren
+and the zhen system.
+
+
+
+Table 3
+Abstractive Summary: 
+aren zhen time
+
+nist03 nist02 nist03 nist02 (ms.)
+MAP 54.2 64.2 40.1 39.0 -
+
+N -best MBR 54.3 64.5 40.2 39.2 3.7
+Lattice MBR
+
+FSAMBR 54.9 65.2 40.6 39.5 3.7
+LatMBR 54.8 65.2 40.7 39.4 0.2
+
+Table 3: Lattice MBR for a phrase-based system.
+
+
+
+Table 4
+Abstractive Summary: 
+aren zhen time
+
+nist03 nist02 nist03 nist02 (ms.)
+Hiero
+
+MAP 52.8 62.9 41.0 39.8 -
+N -best MBR 53.2 63.0 41.0 40.1 3.7
+
+HGMBR 53.3 63.1 41.0 40.2 0.5
+SAMT
+
+MAP 53.4 63.9 41.3 40.3 -
+N -best MBR 53.8 64.3 41.7 41.1 3.7
+
+HGMBR 54.0 64.6 41.8 41.1 0.5
+
+Table 4: Hypergraph MBR for Hiero/SAMT systems.
+
+
+
+Table 5
+Abstractive Summary: 
+On lattices, it
+achieves similar run-times as the implementation
+
+System BLEU (%)
+MAP MBR
+
+default mert-b mert+b
+aren.pb 54.2 54.8 54.8 54.9
+aren.hier 52.8 53.3 53.5 53.7
+aren.samt 53.4 54.0 54.4 54.0
+zhen.pb 40.1 40.7 40.7 40.9
+zhen.hier 41.0 41.0 41.0 41.0
+zhen.samt 41.3 41.8 41.6 41.7
+
+Table 5: MBR Parameter Tuning on NIST systems
+
+MBR wrt.
+Table 5 shows results for NIST systems.
+
+
+
+Table 6
+Abstractive Summary: 
+MAP default mert-b mert+b
+# of gains 18 22 26
+# of no-changes 9 5 8
+# of drops 12 12 5
+
+Table 6: MBR on Multi-language systems.
+Document34.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+3
+
+3With the notable exception of FrameNet, which is devel-
+oping a large number of labels organised hierarchically and
+
+Task PropBank ERR VerbNet ERR
+Role generalisation 62 (82−52/48) 66 (77−33/67)
+No verbal features 48 (76−52/48) 43 (58−33/67)
+Unseen predicates 50 (75−52/48) 37 (62−33/67)
+
+Table 2: Percent Error rate reduction (ERR) across
+role labelling sets in three tasks in Zapirain et al.
+
+
+
+Table 2
+Abstractive Summary: 
+291
+
+
+
+PropBank VerbNet
+A0 38.8 Agent 32.8 Cause 1.9 Source 0.9 Asset 0.3 Goal 0.00
+A1 51.7 Theme 26.3 Product 1.6 Actor1 0.8 Material 0.2 Agent1 0.00
+A2 9.0 Topic 11.5 Extent 1.3 Theme2 0.8 Beneficiary 0.2
+A3 0.5 Patient 5.8 Destination 1.2 Theme1 0.8 Proposition 0.1
+A4 0.0 Experiencer 4.2 Patient1 1.2 Attribute 0.7 Value 0.1
+A5 0.0 Predicate 2.3 Location 1.0 Patient2 0.5 Instrument 0.1
+AA 0.0 Recipient 2.2 Stimulus 0.9 Actor2 0.3 Actor 0.0
+
+Table 1: Distribution of PropBank core labels and VerbNet labels.
+
+
+
+Table 3
+Abstractive Summary: 
+292
+
+
+
+A0 A1 A2 A3 A4 A5 AA
+Agent 32.6 0.2 - - - - -
+Patient 0.0 5.8 - - - - -
+Goal 0.0 1.5 4.0 0.2 0.0 0.0 -
+Extent - 0.2 1.3 0.2 - - -
+PredAttr 1.2 39.3 2.9 0.0 - - 0.0
+Product 0.1 2.7 0.6 - 0.0 - -
+InstrCause 4.8 2.2 0.3 0.1 - - -
+
+Table 3: Distribution of PropBank by VerbNet
+group labels according to SemLink.
+The proportion counts are
+shown in Table 3 and 4.
+
+
+
+Table 4
+Abstractive Summary: 
+Some linguistically-inspired
+
+A0 A1 A2 A3 A4 A5 AA
+Actor 0.0 - - - - - -
+Actor1 0.8 - - - - - -
+Actor2 - 0.3 0.1 - - - -
+Agent1 0.0 - - - - - -
+Agent 32.6 0.2 - - - - -
+Asset - 0.1 0.0 0.2 - - -
+Attribute - 0.1 0.7 - - - -
+Beneficiary - 0.0 0.1 0.1 0.0 - -
+Cause 0.7 1.1 0.1 0.1 - - -
+Destination - 0.4 0.8 0.0 - - -
+Experiencer 3.3 0.9 0.1 - - - -
+Extent - - 1.3 - - - -
+Goal - - - - 0.0 - -
+Instrument - - 0.1 0.0 - - -
+Location 0.0 0.4 0.6 0.0 - 0.0 -
+Material - 0.1 0.1 0.0 - - -
+Patient 0.0 5.8 - - - - -
+Patient1 0.1 1.1 - - - - -
+Patient2 - 0.1 0.5 - - - -
+Predicate - 1.2 1.1 0.0 - - -
+Product 0.0 1.5 0.1 - 0.0 - -
+Proposition - 0.0 0.1 - - - -
+Recipient - 0.3 2.0 - 0.0 - -
+Source - 0.3 0.5 0.1 - - -
+Stimulus - 1.0 - - - - -
+Theme 0.8 25.1 0.5 0.0 - - 0.0
+Theme1 0.4 0.4 0.0 0.0 - - -
+Theme2 0.1 0.4 0.3 - - - -
+Topic - 11.2 0.3 - - - -
+Value - 0.1 - - - - -
+
+Table 4: Distribution of PropBank by original
+VerbNet labels according to SemLink.
+
+
+
+Table 5
+Abstractive Summary: 
+Because of this relation, we expect a strong
+correlation between role sets and their associated
+
+293
+
+
+
+A0,A1 A0,A2 A1,A2
+Agent, Theme 11650 109 4
+Agent, Topic 8572 14 0
+Agent, Patient 1873 0 0
+Experiencer, Theme 1591 0 15
+Agent, Product 993 1 0
+Agent, Predicate 960 64 0
+Experiencer, Stimulus 843 0 0
+Experiencer, Cause 756 0 2
+
+Table 5: Sample of role sets correspondences
+
+verb, as well as role sets and verb classes for both
+annotation schemes.
+Using the
+original VerbNet labels – a very small sample of
+the most frequent ones is reported in Table 5 —
+we find 39 different sets.
+Document153.txt
+
+Document147.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+One example associated
+with the manually constructed desirable questions
+
+2’P@3’ is the number of ’good’ clusters out of the top
+three clusters
+
+95
+
+
+
+Table 1: Experiment results
+Methods MAP P@1 P@3 Err@3
+List B 41.3% 42.1% 27.7% 33.0%
+List S 60.3% 90.0% 81.3% 11.0%
+
+Ambiguous B 31.1% 33.2% 21.8% 47.1%
+Ambiguous S 53.6% 71.1% 64.2% 29.7%
+
+Table 2: TREC Question Examples
+
+LQ1: Who is the winners of the NASCAR races?
+Table 1 pro-
+vides the statistics of the performance on the the
+two question collection.
+Document146.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+The phone numbers of
+the calls were recorded, and we assumed that each
+
+90
+
+
+
+Table 1: ASR accuracy by response type
+Correct Incorrect Total (Acc.)
+
+
+
+Table 2
+Abstractive Summary: 
+This
+
+91
+
+
+
+Table 2: Best prediction accuracies for each con-
+dition and window width w
+
+Conditions (Used inputs) Prediction acc.
+Document152.txt
+
+Document35.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+300
+
+
+
+Evaluation Data Metrics
+train test BLEUR METEORR NISTR TERR MTR RTER MT+RTER
+
+Sentence-level
+Ar+Ch Ur 49.9 49.1 49.5 50.1 50.1 54.5 55.6
+Ar+Ur Ch 53.9 61.1 53.1 50.3 57.3 58.0 62.7
+Ch+Ur Ar 52.5 60.1 50.4 54.5 55.2 59.9 61.1
+
+System-level
+Ar+Ch Ur 73.9 68.4 50.0 90.0∗ 92.7∗ 77.4∗ 81.0∗
+Ar+Ur Ch 38.5 44.3 40.0 59.0∗ 51.8∗ 47.7 57.3∗
+Ch+Ur Ar 59.7∗ 86.3∗ 61.9∗ 42.1 48.1 59.7∗ 61.7∗
+
+Table 1: Expt.
+Table 1 shows the results.
+
+
+
+Table 2
+Abstractive Summary: 
+[doc WL-12-174261-7457007, sent 2, system2]
+
+Gold: 1
+METEORR: 4.5
+RTER: 1.2
+• Hypothesis root node unaligned
+• Missing alignments for subjects
+• Important entities in hypothesis cannot be
+
+aligned
+• Reference, hypothesis differ in polarity
+
+Table 2: Expt.
+Table 2 shows two classes of
+examples with apparent improvements.
+
+
+
+Table 3
+Abstractive Summary: 
+[686, rbmt4]
+
+Rank: 5 Rank: 2 Rank: 4 Rank: 5
+
+Table 3: Expt.
+Table 3 further illustrates the difference between
+the top models on two example sentences.
+
+
+
+Table 4
+Abstractive Summary: 
+Feature set Consis-
+tency (%)
+
+System-level
+correlation (ρ)
+
+BLEUR 49.6 69.3
+METEORR 51.1 72.6
+NISTR 50.2 70.4
+TERR 51.2 72.5
+MTR 51.5 73.1
+RTER 51.8 78.3
+MT+RTER 52.5 75.8
+WMT 08 (worst) 44 37
+WMT 08 (best) 56 83
+
+Table 4: Expt.
+Table 4 shows the results.
+Document21.txt
+
+Document185.txt
+
+Document191.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+We
+
+269
+
+
+
+ID Description
+c1 non-native, before prosody training
+c2 non-native, after first prosody training
+c3 non-native, after second prosody training
+e1 non-native, before going abroad
+e2 non-native, after going abroad
+sl ’super-learner’, near-native
+na native
+
+Table 1: Speaker groups, with ID and description
+in the LeaP Corpus
+
+then describe the classifier setting and experimen-
+tal results in Section 5 as well as discussion.
+
+
+
+Table 2
+Abstractive Summary: 
+5.2 Results
+
+We see that, for within group training, on the
+binary pitch accent recognition task, accuracies
+
+271
+
+
+
+c1 c2 c3 e1 e2 sl na
+Within-group Accuracy 79.1 80.9 80.6 81 82.5 82.4 81.2
+Cross-group Accuracy (na) 77.2 79 81.4 80.3 82.5 83.2
+Cross-group Accuracy (sl) 77.3 79.9 82 80.5 82.9 81.6
+Common Class 56.9 59.6 56.2 70.2 64 65.5 63.6
+
+Table 2: Pitch accent recognition, within-group, cross-group with native and near-native training, and
+most common class baseline: Non-native (plain), ’Super-learner’ (underline sl), Native (bold na)
+
+range from approximately 79% to 82.5%.
+Document218.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+Metonymic Phrase Interpretations Log-probability
+finish video film -19.65
+
+edit -20.37
+shoot -20.40
+view -21.19
+play -21.29
+stack -21.75
+make -21.95
+programme -22.08
+pack -22.12
+use -22.23
+watch -22.36
+produce -22.37
+
+Table 1: Interpretations of Lapata and Lascarides
+(2003) for finish video
+
+2 Lapata and Lascarides’ Method
+
+The intuition behind the approach of Lapata and
+Lascarides is similar to that of Pustejovsky (1991;
+1995), namely that there is an event not explic-
+itly mentioned, but implied by the metonymic
+phrase (begin to read the book, or the meal that
+tastes good vs. the cook that cooks well).
+
+
+
+Table 2
+Abstractive Summary: 
+The top interpretations for the metonymic
+
+3
+
+
+
+finish video enjoy book
+Interpretations Log-prob Interpretations Log-prob
+view -19.68 read -15.68
+watch -19.84 write -17.47
+shoot -20.58 work on -18.58
+edit -20.60 look at -19.09
+film on -20.69 read in -19.10
+film -20.87 write in -19.73
+view on -20.93 browse -19.74
+make -21.26 get -19.90
+edit of -21.29 re-read -19.97
+play -21.31 talk about -20.02
+direct -21.72 see -20.03
+sort -21.73 publish -20.06
+look at -22.23 read through -20.10
+record on -22.38 recount in -20.13
+
+Table 2: Possible Interpretations of Metonymies
+Ranked by our System
+
+phrases enjoy book and finish video together with
+their log-probabilities are shown in Table 2.
+
+
+
+Table 3
+Abstractive Summary: 
+We split them into the devel-
+opment set (5 phrases) and the test set (5 phrases)
+
+5
+
+
+
+Synset and its Gloss Log-prob
+( watch-v-1 ) - look attentively; “watch a basketball game” -4.56
+( view-v-2 consider-v-8 look-at-v-2 ) - look at carefully; study mentally; ”view a problem” -4.66
+( watch-v-3 view-v-3 see-v-7 catch-v-15 take-in-v-6 ) - see or watch; ”view a show on television”; ”This program
+will be seen all over the world”; ”view an exhibition”; ”Catch a show on Broadway”; ”see a movie” -4.68
+( film-v-1 shoot-v-4 take-v-16 ) - make a film or photograph of something; ”take a scene”; ”shoot a movie” -4.91
+( edit-v-1 redact-v-2 ) - prepare for publication or presentation by correcting, revising, or adapting; ”Edit a
+book on lexical semantics”; ”she edited the letters of the politician so as to omit the most personal passages” -5.11
+( film-v-2 ) - record in film; ”The coronation was filmed” -5.74
+( screen-v-3 screen-out-v-1 sieve-v-1 sort-v-1 ) - examine in order to test suitability; ”screen these samples”;
+”screen the job applicants” -5.91
+( edit-v-3 cut-v-10 edit-out-v-1 ) - cut and assemble the components of; ”edit film”; ”cut recording tape” -6.20
+
+Table 3: Metonymy Interpretations as Synsets (for finish video)
+
+Synset and its Gloss Log-prob
+( direct-v-1 ) - command with authority; “He directed the children to do their homework” -6.65
+( target-v-1 aim-v-5 place-v-7 direct-v-2 point-v-11 ) - intend (something) to move towards a certain goal;
+”He aimed his fists towards his opponent’s face”; ”criticism directed at her superior”; ”direct your anger
+towards others, not towards yourself” -7.35
+( direct-v-3 ) - guide the actors in (plays and films) -7.75
+( direct-v-4 ) - be in charge of -8.04
+
+Table 4: Different Senses of direct (for finish video)
+
+Development Set Test Set
+enjoy book enjoy story
+finish video finish project
+start experiment try vegetable
+finish novel begin theory
+enjoy concert start letter
+
+Table 5: Metonymic Phrases in Development and
+Test Sets
+
+given in the table 5.
+
+
+
+Table 4
+Abstractive Summary: 
+All of
+
+6
+
+
+
+Dataset Verb Probability Gloss MAP
+Mass Distribution Processing
+
+Development set Uniform No 0.51
+Development set Zipfian No 0.65
+Development set Zipfian Yes 0.73
+Test set Zipfian Yes 0.83
+
+Table 6: Evaluation of the Model Ranking
+
+Group 1 Group 2
+finish video finish project
+start experiment begin theory
+enjoy concert start letter
+
+Table 7: Metonymic Phrases for Groups 1 and 2
+
+them were native speakers of English and non-
+linguists.
+Document230.txt
+
+Document224.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+Section 4
+
+Table 1: Complete set of function labels in Chi-
+nese Treebank and function labels used in our sys-
+tem (selected labels).
+As for the task of function parsing, it is reason-
+able to ignore the IMP and Q in Table 1 since they
+do not form natural syntactic or semantic classes.
+
+
+
+Table 2
+Abstractive Summary: 
+Table 2: Categories of function tags with their rel-
+ative frequencies and average length.
+After the modifications discussed above, in our
+final system we use 20 function labels3 (18 origi-
+nal CTB labels shown in Table 2 and two newly
+added labels) that are grouped into two types:
+grammatical roles and adverbials.
+
+
+
+Table 3
+Abstractive Summary: 
+4.1 Evaluation of Different Features and
+Models
+
+In pilot experiments on a subset of the features,
+we provide a comparison of HM-SVM with other
+two learning models, maximum entropy (Max-
+Ent) model (Berger et al., 1996) and SVM model
+(Kudo, 2001), to test the effectiveness of HM-
+SVM on function labeling task, as well as the
+generality of our hypothesis on different learning
+
+58
+
+
+
+Table 3: Features used in each experiment round.
+
+
+
+Table 4
+Abstractive Summary: 
+Table 4: Average performance for individual cat-
+egories, using HM-SVM model with feature FT7
+and gold-standard POS tags.
+Precision Recall F-score
+Overall 0.934 0.942 0.938
+
+grammatical roles 0.949 0.960 0.955
+FOC 0.385 0.185 0.250
+
+IO 0.857 0.286 0.429
+OBJ 0.960 0.980 0.970
+PRD 0.985 0.988 0.987
+SBJ 0.869 0.912 0.890
+TPC 0.292 0.051 0.087
+TAR 0.986 0.990 0.990
+
+adverbials 0.887 0.887 0.887
+ADT 0.690 0.663 0.676
+ADV 0.956 0.955 0.956
+BNF 0.729 0.869 0.793
+CND 0.000 0.000 0.000
+DIR 0.741 0.812 0.775
+EXT 0.899 0.820 0.857
+LGS 0.563 0.659 0.607
+LOC 0.712 0.721 0.716
+
+MNR 0.736 0.783 0.759
+PRP 0.656 0.404 0.500
+
+TMP 0.821 0.808 0.814
+
+Table 4 details the results of individual function
+types.
+
+
+
+Table 5
+Abstractive Summary: 
+Table 5: Performance separated for grammatical
+roles and adverbials, of our models GoldPOS (us-
+ing gold-standard POS tags), GoldPARSE (using
+gold-standard parse trees), AutoPOS (using auto-
+matically labeled POS tags).
+Results in Table 5 show that the parser tree
+doesn’t help a lot in Chinese function labeling.
+Document9.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+Type Fields
+VL (KOORD) (C) (MF) VC (NF)
+V1 (KOORD) (LV) LK (MF) (VC) (NF)
+V2 (KOORD) (LV) VF LK (MF) (VC) (NF)
+
+Table 1: Topological field model of German.
+
+
+
+Table 2
+Abstractive Summary: 
+67
+
+
+
+Gold tags Edge labels LP% LR% F1% CB CB0% CB ≤ 2% EXACT%
+- - 93.53 93.17 93.35 0.08 94.59 99.43 79.50
++ - 95.26 95.04 95.15 0.07 95.35 99.52 83.86
+- + 92.38 92.67 92.52 0.11 92.82 99.19 77.79
++ + 92.36 92.60 92.48 0.11 92.82 99.19 77.64
+
+Table 2: Parsing results for topological fields and clausal constituents on the TüBa-D/Z corpus.
+
+
+
+Table 3
+Abstractive Summary: 
+≤ 40) 89.54 88.14 88.83
+This work (all) 90.29 90.51 90.40
+BF02 (all) 89.07 87.80 88.43
+
+Table 3: BF02 = (Becker and Frank, 2002).
+
+
+
+Table 4
+Abstractive Summary: 
+Topological Fields
+Category # LP% LR% F1%
+PARORD 20 100.00 100.00 100.00
+VCE 3 100.00 100.00 100.00
+LK 2186 99.68 99.82 99.75
+C 642 99.53 98.44 98.98
+VC 1777 98.98 98.14 98.56
+VF 2044 96.84 97.55 97.20
+KOORD 99 96.91 94.95 95.92
+MF 2931 94.80 95.19 94.99
+NF 643 83.52 81.96 82.73
+FKOORD 156 75.16 73.72 74.43
+LV 17 10.00 5.88 7.41
+Clausal Constituents
+Category # LP% LR% F1%
+SIMPX 2839 92.46 91.97 92.21
+RSIMPX 225 91.23 92.44 91.83
+PSIMPX 6 100.00 66.67 80.00
+DM 28 59.26 57.14 58.18
+
+Table 4: Category-specific results using grammar
+with no edge labels and passing in gold POS tags.
+Overall, Table 4 shows
+that the best performing topological field cate-
+gories are those that have constraints on the type
+of word that is allowed to fill it (finite verbs in
+LK, verbs in VC, complementizers and subordi-
+nating conjunctions in C).
+
+
+
+Table 5
+Abstractive Summary: 
+Misidentification of Parentheticals 19
+Coordination problems 13
+Too few SIMPX 10
+Paired punctuation problem 9
+Other clause boundary errors 7
+Other 6
+Too many SIMPX 3
+Clause type misidentification 2
+MF/NF boundary 2
+LV 2
+VF/MF boundary 2
+
+Table 5: Types and frequency of parser errors in
+the fifty worst scoring parses by F1-measure, us-
+ing parameters (+ Gold tags, - Edge labels).
+Document232.txt
+
+Document226.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+conf A1 A2 A3 A4
+Ours 0.05 0.05 0.1 0.2
+1 0.1
+2 0.1 0.2
+3 0.1 0.2 0.3 0.5
+4 0.05 0.1 0.2 0.4
+5 0.22 0.3 0.4 0.6
+6 0.25 0.4 0.5 0.7
+7 0.2 0.4 0.5 0.8
+8 0.6
+
+Table 1: Table shows our threshold where A1, A2,
+A3, and A4 correspond to the absolute cumulative
+n-gram precision value (n=1,2,3,4 respectively).
+We model P(outlier) taking care of the
+quantity of S2(e, f), where we choose 0.1: other
+configurations in Table 1 are used in experiments.
+
+
+
+Table 2
+Abstractive Summary: 
+Table 2: Sentences judged as outliers by Algo-
+rithm 1 (ENFR News Commentary corpus).
+Table 2 shows outliers detected by Algorithm 1.
+
+
+
+Table 3
+Abstractive Summary: 
+We use the devset and the evaluation set
+
+alignment ENFR ESEN
+grow-diag-final 0.058 0.115
+
+union 0.205 0.116
+intersection 0.164 0.116
+
+Table 3: Performance of word-based MT system
+in different alignment methods.
+Although we have chosen union, other se-
+lection options may be possible as Table 3 sug-
+gests.
+
+
+
+Table 4
+Abstractive Summary: 
+pair ENFR FREN
+score 0.205 0.176
+
+ENES ENDE DEEN
+0.276 0.134 0.208
+
+Table 4: Performance of word-based MT system
+for different language pairs with union alignment
+method.
+
+
+
+Table 5
+Abstractive Summary: 
+Table 5: Four figures marked as score shows the
+cumulative n-gram score from left to right.
+
+
+
+Table 6
+Abstractive Summary: 
+In Table 6, in the case of
+
+77
+
+
+
+ENES Bleu effective sent UNK
+Base 0.280 99.30 % 1.60%
+Ours 0.314 96.54% 1.61%
+1 0.297 56.21% 2.21%
+2 0.294 60.37% 2.09%
+3 0.301 66.20% 1.97%
+4 0.306 84.60% 1.71%
+5 0.299 56.12% 2.20%
+6 0.271 25.05% 2.40%
+7 0.283 35.28% 2.26%
+8 0.264 19.78% 4.22%
+
+DEEN % ENFR %
+Base 0.169 99.10% 0.180 91.81%
+Ours 0.221 96.42% 0.192 96.38%
+1 0.201 40.49% 0.187 49.37%
+2 0.205 48.53% 0.188 55.03%
+3 0.208 58.07% 0.187 61.22%
+4 0.215 83.10% 0.190 81.57%
+5 0.192 29.03% 0.180 31.52%
+6 0.174 17.69% 0.162 29.97%
+7 0.186 24.60% 0.179 30.52%
+8 0.177 18.29% 0.167 17.11%
+
+Table 6: Table shows Bleu score for ENES,
+DEEN, and ENFR: 0.314, 0.221, and 0.192, re-
+spectively.
+
+
+
+Table 7
+Abstractive Summary: 
+ENES Bleu effective sent
+Base 0.280 99.30 %
+Ours 0.317 97.80 %
+DEEN Bleu effective sent
+Base 0.169 99.10 %
+Ours 0.218 97.14 %
+
+Table 7: This table shows results for the revised
+Good Points Algorithm.
+
+
+
+Table 8
+Abstractive Summary: 
+For example, look at Figure 6 for sen-
+
+78
+
+
+
+X ENFR FREN ESEN DEEN ENDE
+10 0.167 0.088 0.143 0.097 0.079
+20 0.087 0.195 0.246 0.138 0.127
+30 0.145 0.229 0.279 0.157 0.137
+40 0.175 0.242 0.295 0.168 0.142
+50 0.229 0.250 0.297 0.170 0.145
+60 0.178 0.253 0.297 0.171 0.146
+70 0.179 0.251 0.298 0.170 0.146
+80 0.181 0.252 0.301 0.169 0.147
+90 0.180 0.252 0.297 0.171 0.147
+
+100 0.180 0.251 0.302 0.169 0.146
+# 51k 51k 51k 60k 60k
+
+ave 21.0/23.8(EN/FR) 20.9/24.5(EN/ES)
+len 20.6/21.6(EN/DE)
+
+Table 8: Bleu score after cleaning of sen-
+tences with length greater than X.
+It is noted that results for the base-
+line system are shown in Table 8 where we picked
+up the score where n is 100.
+The results of this algorithm
+is shown in Table 8 where we varies X and lan-
+guage pair.
+Document187.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+De-
+
+lemma, POS Tag, voice, and SCF of predicate
+categories, position of two arguments; rewrite
+rules expanding subroots of two arguments
+content and POS tags of the boundary words
+and head words
+category path from the predicate to candidate
+arguments
+single character category path from the
+predicate to candidate arguments
+conjunction of categories, position, head
+words, POS of head words
+category and single character category path
+from the first argument to the second argument
+
+Table 1: Features for thematic rank identification.
+
+
+
+Table 2
+Abstractive Summary: 
+Detection SRL (S) SRL (G)
+Baseline – 94.77% –
+A 94.65% 95.44% 96.89%
+A & P↑ 95.62% 95.07% 96.39%
+A & P↓ 94.09% 95.13% 97.22%
+Table 2: Accuracy on different hierarchies
+
+Table 2 summarizes the performance of the-
+matic rank prediction and SRC on different the-
+matic hierarchies.
+Detection SRL (S) SRL (G)
+Baseline – 94.77% –
+A 94.65% 95.44% 96.89%
+A & P↑ 95.62% 95.07% 96.39%
+A & P↓ 94.09% 95.13% 97.22%
+Table 2: Accuracy on different hierarchies
+
+Table 2 summarizes the performance of the-
+matic rank prediction and SRC on different the-
+matic hierarchies.
+
+
+
+Table 3
+Abstractive Summary: 
+BL P(%) R(%) F
+� 57.40 94.79 97.13 98.33 97.73
+≺ 9.70 51.23 98.52 97.24 97.88
+∼ 23.05 13.41 94.49 93.59 94.04
+= 0.33 19.57 93.75 71.43 81.08
+AR 5.55 95.43 99.15 99.72 99.44
+AC 3.85 78.40 87.77 82.04 84.81
+CA 0.16 30.77 83.33 50.00 62.50
+All – 75.75 96.42
+
+Table 3: Thematic rank prediction performance
+
+Table 4 summarizes overall accuracy of SRC.
+4.3 Results And Improvement Analysis
+Table 3 summarizes the precision, recall, and F-
+measure of this task.
+
+
+
+Table 4
+Abstractive Summary: 
+Gold Charniak
+Baseline 95.14% 94.12%
+Hard 95.71% 94.74%
+Soft 96.07% 95.44%
+
+Table 4: Overall SRC accuracy.
+BL P(%) R(%) F
+� 57.40 94.79 97.13 98.33 97.73
+≺ 9.70 51.23 98.52 97.24 97.88
+∼ 23.05 13.41 94.49 93.59 94.04
+= 0.33 19.57 93.75 71.43 81.08
+AR 5.55 95.43 99.15 99.72 99.44
+AC 3.85 78.40 87.77 82.04 84.81
+CA 0.16 30.77 83.33 50.00 62.50
+All – 75.75 96.42
+
+Table 3: Thematic rank prediction performance
+
+Table 4 summarizes overall accuracy of SRC.
+Document193.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+68.48 37.94
+
+Plain RC Trees 69.07 30.89
+
+Elided RC Trees 67.91 24.80
+
+Merged RC Trees 68.88 27.63
+
+Table 1: Results
+
+Results of the testing can be seen in Ta-
+
+ble 1.
+Document37.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+XP+ PSDB
+Baseline 0.041 0.030 0.006 0.065 0.20 0.35 0.19 -0.12 — —
+XP+ 0.002 0.049 0.046 0.044 0.17 0.29 0.16 0.12 -0.12 —
+UniSDB 0.023 0.051 0.055 0.012 0.21 0.20 0.12 0.04 — 0.29
+BiSDB 0.016 0.032 0.027 0.013 0.13 0.23 0.08 0.09 — 0.38
+
+Table 1: Feature weights obtained by MERT on the development set.
+
+
+
+Table 2
+Abstractive Summary: 
+BLEU-n n-gram Precision
+System 4 1 2 3 4 5 6 7 8
+Baseline 0.2612 0.71 0.36 0.18 0.10 0.054 0.030 0.016 0.009
+XP+ 0.2720** 0.72 0.37 0.19 0.11 0.060 0.035 0.021 0.012
+UniSDB 0.2762**+ 0.72 0.37 0.20 0.11 0.062 0.035 0.020 0.011
+BiSDB 0.2779**++ 0.72 0.37 0.20 0.11 0.065 0.038 0.022 0.014
+
+Table 2: Results on the test set.
+
+
+
+Table 3
+Abstractive Summary: 
+BLEU-4
+Features UniSDB BiSDB
+PF + RF 0.2555 0.2644*@@
+PF 0.2596 0.2671**@@
+CBMF 0.2678** 0.2725**@
+RF + CBMF 0.2737** 0.2780**++@@
+PF + CBMF 0.2755**+ 0.2782**++@−
+
+RF + PF + CBMF 0.2762**+ 0.2779**++
+
+Table 3: Results of different feature sets.
+Table 3 shows the results, from which we have the
+following key observations.
+
+
+
+Table 4
+Abstractive Summary: 
+Since BLEU is not sufficient
+
+320
+
+
+
+System CCM Rate (%)
+Baseline 43.5
+XP+ 74.5
+BiSDB 72.4
+
+Table 4: Consistent constituent matching rates re-
+ported on 1-best translation outputs.
+Table 4 shows the consistent constituent match-
+ing rates.
+
+
+
+Table 5
+Abstractive Summary: 
+CCM Rates (%)
+System <6 6-10 11-15 16-20 >20
+XP+ 75.2 70.9 71.0 76.2 82.2
+BiSDB 69.3 74.7 74.2 80.0 85.6
+
+Table 6: Consistent constituent matching rates for
+structures with different spans.
+The examples in Table 5 show that the de-
+coder is able to generate better translations if it is
+
+4We only consider multi-branch constituents.
+
+
+
+Table 6
+Abstractive Summary: 
+321
+
+
+
+Src: [[为 [印度洋灾区民众]NP ]PP [奉献 [自己]NP [一份爱心]NP ]VP ]VP
+Ref: show their loving hearts to people in the Indian Ocean disaster areas
+Baseline: 〈love/爱心 [for the/为 〈[people/民众 [to/奉献 [own/自己 a report/一份]]]〉 〈in/灾区 the Indian Ocean/印
+
+度洋〉]〉
+XP+: 〈[contribute/奉献 [its/自己 [part/一份 love/爱心]]] [for/为 〈the people/民众 〈in/灾区 the Indian Ocean/印
+
+度洋〉〉]〉
+BiSDB: 〈[[[contribute/奉献 its/自己] part/一份] love/爱心] [for/为 〈the people/民众 〈in/灾区 the Indian Ocean印
+
+度洋〉〉]〉
+Src: [五角大厦 [已]ADVP [派遣 [[二十架]QP 飞机]NP [至南亚]PP]VP]IP [，]PU [其中包括...]IP
+Ref: The Pentagon has dispatched 20 airplanes to South Asia, including...
+Baseline: [[The Pentagon/五角大厦 has sent/已派遣] [〈[to/至 [[South Asia/南亚 ,/，] including/其中包括]] [20/二
+
+十 plane/架飞机]〉]]
+XP+: [The Pentagon/五角大厦 [has/已 [sent/派遣 [[20/二十 planes/架飞机] [to/至 South Asia/南亚]]]]] [,/，
+
+[including/其中包括...]]
+BiSDB: [The Pentagon/五角大厦 [has sent/已派遣 [[20/二十 planes/架飞机] [to/至 South Asia/南亚]]] [,/， [in-
+
+cluding/其中包括...]]
+
+Table 5: Translation examples showing that both XP+ and BiSDB produce better translations than the
+baseline, which inappropriately violates constituent boundaries (within underlined phrases).
+
+
+
+Table 7
+Abstractive Summary: 
+Src: [[在 [[[美国国务院与鲍尔]NP [短暂]ADJP [会谈]NP]NP 后]LCP]PP 表示]VP
+Ref: said after a brief discussion with Powell at the US State Department
+XP+: [〈after/后 〈〈[a brief/短暂 meeting/会谈] [with/与 Powell/鲍尔]〉 [in/在 the US State Department/美国国
+
+务院]〉 said/表示]
+BiSDB: 〈said after/后表示 〈[a brief/短暂 meeting/会谈] 〈 with Powell/与鲍尔 [at/在 the State Department of the
+
+United States/美国国务院]〉〉〉
+Src: [向 [[建立 [未来民主政治]NP]VP]IP]PP [迈出了 [关键性的一步]NP]VP
+Ref: took a key step towards building future democratic politics
+XP+: 〈[a/了 [key/关键性 step/的一步]] 〈forward/迈出 [to/向 [a/建立 [future/未来 political democracy/民主政
+
+治]]]〉〉
+BiSDB: 〈[made a/迈出了 [key/关键性 step/的一步]] [towards establishing a/向建立 〈democratic politics/民主政
+
+治 in the future/未来〉]〉
+
+Table 7: Translation examples showing that BiSDB produces better translations than XP+ via appropriate
+violations of constituent boundaries (within double-underlined phrases).
+Table 7 shows
+more examples.
+Document23.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+The correlations are listed for the following ver-
+sions of our method: pm - partial matching for
+dependencies; wn - WordNet; pred - matching
+predicate-only dependencies; norel - ignoring de-
+pendency relation label; one - counting a match
+only once irrespective of how many instances of
+
+194
+
+
+
+TAC 2008 Pyramid Overall Responsiveness
+Metric models systems models systems
+DEPEVAL(summ): Variations
+base 0.653 0.931 0.883 0.862
+pm 0.690 0.811 0.943 0.740
+wn 0.687 0.929 0.888 0.860
+pred 0.415 0.946 0.706 0.909
+norel 0.676 0.929 0.880 0.861
+one 0.585 0.958* 0.858 0.900
+DEPEVAL(summ): Combinations
+pm wn 0.694 0.903 0.952* 0.839
+pm pred 0.534 0.880 0.898 0.831
+pm norel 0.722 0.907 0.936 0.835
+pm one 0.611 0.950 0.876 0.895
+wn pred 0.374 0.946 0.716 0.912
+wn norel 0.405 0.941 0.752 0.905
+wn one 0.611 0.952 0.856 0.897
+pred norel 0.415 0.945 0.735 0.905
+pred one 0.415 0.953 0.721 0.921*
+norel one 0.600 0.958* 0.863 0.900
+pm wn pred 0.527 0.870 0.905 0.821
+pm wn norel 0.738 0.897 0.931 0.826
+pm wn one 0.634 0.936 0.887 0.881
+pm pred norel 0.642 0.876 0.946 0.815
+pm pred one 0.504 0.948 0.817 0.907
+pm norel one 0.725 0.941 0.905 0.880
+wn pred norel 0.433 0.944 0.764 0.906
+wn pred one 0.385 0.950 0.722 0.919
+wn norel one 0.632 0.954 0.872 0.896
+pred norel one 0.452 0.955 0.756 0.919
+pm wn pred norel 0.643 0.861 0.940 0.800
+pm wn pred one 0.486 0.932 0.809 0.890
+pm pred norel one 0.711 0.939 0.881 0.891
+pm wn norel one 0.743* 0.930 0.902 0.870
+wn pred norel one 0.467 0.950 0.767 0.918
+pm wn pred norel one 0.712 0.927 0.887 0.880
+Other metrics
+ROUGE-2 0.277 0.946 0.725 0.894
+ROUGE-SU4 0.457 0.928 0.866 0.874
+BE-HM 0.423 0.949 0.656 0.911
+
+Table 1: System-level Pearson’s correlation between auto-
+matic and manual evaluation metrics for TAC 2008 data.
+5.1 System-level correlations
+Table 1 presents system-level Pearson’s cor-
+relations between the scores provided by our
+dependency-based metric DEPEVAL(summ),
+as well as the automatic metrics ROUGE-2,
+ROUGE-SU4, and BE-HM used in the TAC
+evaluation, and the manual Pyramid scores, which
+measured the content quality of the systems.
+
+
+
+Table 2
+Abstractive Summary: 
+This substantial difference in the nature of
+human-generated models and system-produced
+summaries has impact on all automatic means of
+evaluation, as long as we are limited to methods
+that operate on more shallow levels than a full
+
+195
+
+
+
+TAC 2008 Pyramid Overall Responsiveness
+Metric models systems models systems
+DEPEVAL(summ): Variations
+base 0.436 (B) 0.595 (R2,R4,B) 0.186 0.373 (R2,B)
+pm 0.467 (B) 0.584 (R2,B) 0.183 0.368 (B)
+wn 0.448 (B) 0.592 (R2,B) 0.192 0.376 (R2,R4,B)
+pred 0.344 0.543 (B) 0.170 0.327
+norel 0.437 (B) 0.596* (R2,R4,B) 0.186 0.373 (R2,B)
+one 0.396 0.587 (R2,B) 0.171 0.376 (R2,R4,B)
+DEPEVAL(summ): Combinations
+pm wn 0.474 (B) 0.577 (R2,B) 0.194* 0.371 (R2,B)
+pm pred 0.407 0.537 (B) 0.153 0.337
+pm norel 0.483 (R2,B) 0.584 (R2,B) 0.168 0.362
+pm one 0.402 0.577 (R2,B) 0.167 0.384 (R2,R4,B)
+wn pred 0.352 0.537 (B) 0.182 0.328
+wn norel 0.364 0.541 (B) 0.187 0.329
+wn one 0.411 0.581 (R2,B) 0.182 0.384 (R2,R4,B)
+pred norel 0.351 0.547 (B) 0.169 0.327
+pred one 0.325 0.542 (B) 0.171 0.347
+norel one 0.403 0.589 (R2,B) 0.176 0.377 (R2,R4,B)
+pm wn pred 0.415 0.526 (B) 0.167 0.337
+pm wn norel 0.488* (R2,R4,B) 0.576 (R2,B) 0.168 0.366 (B)
+pm wn one 0.417 0.563 (B) 0.179 0.389* (R2,R4.B)
+pm pred norel 0.433 (B) 0.538 (B) 0.124 0.333
+pm pred one 0.357 0.545 (B) 0.151 0.381 (R2,R4,B)
+pm norel one 0.437 (B) 0.567 (R2,B) 0.174 0.369 (B)
+wn pred norel 0.353 0.541 (B) 0.180 0.324
+wn pred one 0.328 0.535 (B) 0.179 0.346
+wn norel one 0.416 0.584 (R2,B) 0.185 0.385 (R2,R4,B)
+pred norel one 0.336 0.549 (B) 0.169 0.351
+pm wn pred norel 0.428 (B) 0.524 (B) 0.120 0.334
+pm wn pred one 0.363 0.525 (B) 0.164 0.380 (R2,R4,B)
+pm pred norel one 0.420 (B) 0.533 (B) 0.154 0.375 (R2,R4,B)
+pm wn norel one 0.452 (B) 0.558 (B) 0.179 0.376 (R2,R4,B)
+wn pred norel one 0.338 0.544 (B) 0.178 0.349
+pm wn pred norel one 0.427 (B) 0.522 (B) 0.153 0.379 (R2,R4,B)
+Other metrics
+ROUGE-2 0.307 0.527 0.098 0.323
+ROUGE-SU4 0.318 0.557 0.153 0.327
+BE-HM 0.239 0.456 0.135 0.317
+
+Table 2: Summary-level Pearson’s correlation between automatic and manual
+evaluation metrics for TAC 2008 data.
+
+
+
+Table 3
+Abstractive Summary: 
+DUC 2007 Content Responsiveness
+Metric models systems
+DEPEVAL(summ) 0.7341 0.8429
+DEPEVAL(summ) wn 0.7355 0.8354
+DEPEVAL(summ) norel 0.7394 0.8277
+DEPEVAL(summ) one 0.7507 0.8634
+ROUGE-2 0.4077 0.8772
+ROUGE-SU4 0.2533 0.8297
+BE-HM 0.5471 0.8608
+
+Table 3: System-level Pearson’s correlation
+between automatic metrics and Content Respon-
+siveness for DUC 2007 data.
+Table 3 shows
+the correlations with Content Responsiveness
+for DUC 2007 data for ROUGE, BE, and those
+few select versions of DEPEVAL(summ) which
+achieve optimal results on TAC 2008 data (for
+a more detailed discussion of the selection see
+Section 6).
+
+
+
+Table 4
+Abstractive Summary: 
+DUC 2007 Content Responsiveness
+Metric models systems
+DEPEVAL(summ) 0.2059 0.4150
+DEPEVAL(summ) wn 0.2081 0.4178
+DEPEVAL(summ) norel 0.2119 0.4185
+DEPEVAL(summ) one 0.1999 0.4101
+ROUGE-2 0.1501 0.3875
+ROUGE-SU4 0.1397 0.4264
+BE-HM 0.1330 0.3722
+
+Table 4: Summary-level Pearson’s correlation
+between automatic metrics and Content Respon-
+siveness for DUC 2007 data.
+Document144.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+The evi-
+
+Input sentence 
+He wants to go to a movie theater 
+
+Unrealistic simulated output 
+He wants to to a movie theater 
+
+Realistic simulated output 
+
+He want go to movie theater 
+
+Table 1: Examples of simulated outputs  
+
+Figure 1: An example process of grammar error simulation 
+
+82
+
+
+
+dence predicate in this case is ܲݏ)݃ܽܶݏ݋,  ,(ݐ݌,݅
+which is true iff the ݅th position of the sentence ݏ 
+has the part of speech ݐ݌.
+
+
+
+Table 2
+Abstractive Summary: 
+A survey of statistical user 
+
+simulation techniques for reinforcement-learning 
+
+of dialogue management strategies, The Know-
+
+ledge Engineering ReviewVol–  
+
+ 
+Advanced Level:  
+
+DKL (Real || Proposed)=0.068, DKL (Real || Baseline)=0.122 
+
+ 
+Intermediate Level: 
+
+DKL (Real || Proposed)=0.075, DKL (Real || Baseline)=0.142 
+
+Beginner Level: 
+DKL (Real || Proposed)=0.075, DKL (Real || Baseline)=0.092 
+
+Figure 2: Comparison between the distributions of the 
+
+real and simulated data 
+
+ Human 1 Human 2 Average Kappa 
+
+Real 0.84 0.8 0.82 0.46 
+
+Simulated 0.8 0.8 0.8 0.5 
+
+Table 2: Human evaluation results 
+
+84
+Document150.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+Let Ci ∈
+
+106
+
+
+
+Dataset total positive biased positive negative biased negative % bias in positive % bias in negative
+DUC 2005 24831 1480 1127 1912 1063 76.15 55.60
+DUC 2006 14747 1047 902 1407 908 86.15 71.64
+DUC 2007 12832 924 782 975 674 84.63 69.12
+
+Table 1: Statistical information on counts of query-biased sentences.
+All the above numbers are based on the
+DUC 2007 dataset shown in boldface in Table 1 1.
+
+
+
+Table 2
+Abstractive Summary: 
+ID rank LL ROUGE-2 ID rank LL ROUGE-2 ID rank LL ROUGE-2
+1 31 -1.9842 0.06039 J -3.9465 0.13904 24 4 -5.8451 0.11793
+C -2.1387 0.15055 E -3.9485 0.13850 9 12 -5.9049 0.10370
+16 32 -2.2906 0.03813 10 28 -4.0723 0.07908 14 14 -5.9860 0.10277
+27 30 -2.4012 0.06238 21 22 -4.2460 0.08989 5 23 -6.0464 0.08784
+6 29 -2.5536 0.07135 G -4.3143 0.13390 4 3 -6.2347 0.11887
+
+12 25 -2.9415 0.08505 25 27 -4.4542 0.08039 20 6 -6.3923 0.10879
+I -3.0196 0.13621 B -4.4655 0.13992 29 2 -6.4076 0.12028
+
+11 24 -3.0495 0.08678 19 26 -4.6785 0.08453 3 9 -7.1720 0.10660
+28 16 -3.1932 0.09858 26 21 -4.7658 0.08989 8 11 -7.4125 0.10408
+2 18 -3.2058 0.09382 23 7 -5.3418 0.10810 17 15 -7.4458 0.10212
+D -3.2357 0.17528 30 10 -5.4039 0.10614 13 5 -7.7504 0.11172
+H -3.4494 0.13001 7 8 -5.6291 0.10795 32 17 -8.0117 0.09750
+A -3.6481 0.13254 18 19 -5.6397 0.09170 22 13 -8.9843 0.10329
+F -3.8316 0.13395 15 1 -5.7938 0.12448 31 20 -9.0806 0.09126
+
+Table 2: Rank, Averaged log-likelihood score based on binomial model, true ROUGE-2 score for the summaries
+of various systems in DUC’07 query-focused multi-document summarization task.
+Table 2 shows var-
+ious systems with their ranks based on ROUGE-2 and
+the average log-likelihood scores.
+
+
+
+Table 3
+Abstractive Summary: 
+ID rank LL ROUGE-2 ID rank LL ROUGE-2 ID rank LL ROUGE-2
+1 31 -4.6770 0.06039 10 28 -8.5004 0.07908 5 23 -14.3259 0.08784
+16 32 -4.7390 0.03813 G -9.5593 0.13390 9 12 -14.4732 0.10370
+6 29 -5.4809 0.07135 E -9.6831 0.13850 22 13 -14.8557 0.10329
+27 30 -5.5110 0.06238 26 21 -9.7163 0.08989 4 3 -14.9307 0.11887
+I -6.7662 0.13621 J -9.8386 0.13904 18 19 -15.0114 0.09170
+
+12 25 -6.8631 0.08505 19 26 -10.3226 0.08453 14 14 -15.4863 0.10277
+2 18 -6.9363 0.09382 B -10.4152 0.13992 20 6 -15.8697 0.10879
+C -7.2497 0.15055 25 27 -10.7693 0.08039 32 17 -15.9318 0.09750
+H -7.6657 0.13001 29 2 -12.7595 0.12028 7 8 -15.9927 0.10795
+11 24 -7.8048 0.08678 21 22 -13.1686 0.08989 17 15 -17.3737 0.10212
+A -7.8690 0.13254 24 4 -13.2842 0.11793 8 11 -17.4454 0.10408
+D -8.0266 0.17528 30 10 -13.3632 0.10614 31 20 -17.5615 0.09126
+28 16 -8.0307 0.09858 23 7 -13.7781 0.10810 3 9 -19.0495 0.10660
+F -8.2633 0.13395 15 1 -14.2832 0.12448 13 5 -19.3089 0.11172
+
+Table 3: Rank, Averaged log-likelihood score based on multinomial model, true ROUGE-2 score for the sum-
+maries of various systems in DUC’07 query-focused multi-document summarization task.
+Table 3 shows various systems with
+their ranks based on ROUGE-2 and the average log-
+likelihood scores.
+
+
+
+Table 4
+Abstractive Summary: 
+ρ ROUGE-2 ROUGE-SU4
+binomial -0.66 -0.66
+
+multinomial -0.73 -0.73
+
+Table 4: Correlation of ROUGE measures with log-
+likelihood scores for automated systems
+
+ρ ROUGE-2 ROUGE-SU4
+binomial 0.39 0.38
+
+multinomial 0.15 0.09
+
+Table 5: Correlation of ROUGE measures with log-
+likelihood scores for humans
+
+4 Conclusions and Discussion
+
+Our results underscore the differences between human
+and machine generated summaries.
+We speculate that
+
+2All the results in Table 4 are statistically significant with
+p-value (p < 0.00004, N=32)
+
+3None of the results in Table 5 are statistically significant
+with p-value (p > 0.265, N=10)
+
+the real difference in human summarizers and auto-
+mated summarizers could be in the way a query (or rel-
+evance) is represented.
+Document178.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+method recall 
+
+our method 51.68 
+
+initial candidates 51.68 
+
+Japanese-English(*) 73.23 
+Table 1: Recall evaluation results (* marks a manu-
+
+ally created dictionary) 
+
+ (b) 1-to-1 precision evaluation 
+
+We evaluated 2000 randomly selected translation 
+pairs, manually scoring them as correct (the 
+translation conveys the same meaning, or the 
+meanings are slightly different, but in a certain 
+context the translation is possible: 79.15%), un-
+decided (the translation pair’s semantic value is 
+similar, but a translation based on them would be 
+faulty: 6.15%) or wrong (the translation pair’s 
+two entries convey a different meaning: 14.70%).
+
+
+
+Table 2
+Abstractive Summary: 
+threshold value (%) selection 
+type 0.75 0.80 0.85 0.90 0.95 
+
+C 70.27 70.86 71.75 72.81 66.95 
+
+D 69.92 70.30 70.32 70.69 66.66 
+
+E 73.71 74.90 72.52 71.62 65.09 
+
+F 78.78 79.07 79.34 78.50 76.94 
+Table 2: Selection type F-scores with varying thresh-
+
+olds (best scores in bold) 
+
+The output is saved into the configuration file.
+Document179.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+7http://ufal.mff.cuni.cz/∼pajas/tred
+
+IAA Set Sents POS ATT LAB LABATT
+PATB3-Dev All 98.6 91.5 95.3 88.8
+
+≤ 40 98.7 91.7 94.7 88.6
+PROD All 97.6 89.2 93.0 85.0
+
+≤ 40 97.7 91.5 94.1 87.7
+
+Table 1: Average pairwise IAA accuracies for 5
+annotators.
+
+
+
+Table 2
+Abstractive Summary: 
+223
+
+
+
+IAA File Toks/hr POS ATT LAB LABATT
+HI 398 97.0 94.7 96.1 91.2
+HI-S 956 97.0 97.8 97.9 95.7
+LO 476 98.3 88.8 91.7 82.3
+LO-S 944 97.7 91.0 93.8 85.8
+
+Table 2: Highest and lowest average pairwise IAA
+accuracies for 5 annotators achieved on a single
+document – before and after serial annotation.
+
+
+
+Table 3
+Abstractive Summary: 
+subsets from two data sets in Table 1: PATB3-
+Dev is based on an automatically converted PATB
+set and PROD refers to all the new CATiB data.
+Document151.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+111
+
+
+
+Score Count Rule Path N-grams
+1.42340952569648 109 hf-complement-rule→ quantify-n-lrule→ compounds-rule
+0.960090299833317 54 hf-complement-rule→ quantify-n-lrule→ nominal-numcl-rule→ head-specifier-rule
+0.756227560530811 63 head-specifier-rule→ hf-complement-rule→ no-nspec→ ”の”
+0.739668926140179 62 hf-complement-rule→ head-specifier-rule→ hf-complement-rule→ no-nspec
+0.739090261637851 22 hf-complement-rule→ hf-adj-i-rule→ quantify-n-lrule→ compounds-rule
+0.694215264789286 36 hf-complement-rule→ hf-complement-rule→ to-comp-quotarg→ ”と”
+0.676244980660372 82 vstem-vend-rule→ te-adjunct→ ”て”
+0.617621482523537 26 hf-complement-rule→ hf-complement-rule→ to-comp-varg→ ”と”
+0.592260546433334 36 hf-adj-i-rule→ hf-complement-rule→ quantify-n-lrule→ nominal-numcl-rule
+0.564790702894285 62 quantify-n-lrule→ compounds-rule→ vn2n-det-lrule
+
+Table 1: Top 10 RPs for ungenerable items
+
+Original Modified
+Parsable 82% 83%
+Generable 45% 63%
+Reproducible 11% 22%
+Paraphrasable 44% 61%
+
+Table 2: Jacy’s improved general statistics
+
+As an added bonus, our work focused on improv-
+ing generation also improved parsability by 1%.
+5.1 Error Mining
+
+Table 1 lists the ten highest ranked RPs associated
+with items that could parse but could not generate
+in Jacy.
+Document145.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+2.2
+and 2.3)
+
+LangModel Language model scores
+Used Flag whether the candidate
+
+phrase was used as arguments
+of previous predicates
+
+SRLOrder Order in Salient Referent List
+
+Table 1: Features Used in this Paper
+
+based on parts of speech such as verbs and ad-
+jectives.
+
+
+
+Table 2
+Abstractive Summary: 
+12,332 3,147 5,944
+
+Table 2: Corpus Statistics
+
+their priority order to the List as another feature
+(‘SRLOrder’ feature).
+
+
+
+Table 3
+Abstractive Summary: 
+5,409 91.1% 72.6% 80.8%
+Zero-Intra 396 0.0% 0.0% 0.0%
+Zero-Inter 139 0.0% 0.0% 0.0%
+Total 5,944 91.1% 66.1% 76.6%
+
+Table 3: Results on the Test Set
+
+5.5M sentences) using the method described in
+Section 2.2.
+Document22.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+mode self-train co-train
+Method wer per wer per
+
+Combined Rank 40.2 30.0 40.0 29.6
+Alternate 41.0 30.2 40.1 30.1
+Disagree-Pairwise 41.9 32.0 40.5 30.9
+Disagree-Center 41.8 31.8 40.6 30.7
+Random Baseline 41.6 31.0 40.5 30.7
+
+Germanic languages to English
+
+mode self-train co-train
+Method wer per wer per
+
+Combined Rank 37.7 27.3 37.3 27.0
+Alternate 37.7 27.3 37.3 27.0
+Random Baseline 38.6 28.1 38.1 27.6
+
+Romance languages to English
+Table 1: Comparison of multilingual selection methods with
+WER (word error rate), PER (position independent WER).
+
+
+
+Table 2
+Abstractive Summary: 
+2 shows, the KL-divergence between the
+true and estimated distributions are less than that
+
+De2En Fr2En Es2En
+KL(P ∗reg ‖ Preg) 4.37 4.17 4.38
+KL(P ∗reg ‖ unif ) 5.37 5.21 5.80
+KL(P ∗oov ‖ Poov) 3.04 4.58 4.73
+KL(P ∗oov ‖ unif ) 3.41 4.75 4.99
+
+Table 2: For regular/OOV phrases, the KL-divergence be-
+tween the true distribution (P ∗) and the estimated (P ) or uni-
+form (unif ) distributions are shown, where:
+KL(P ∗ ‖ P ) :=
+
+P
+x
+
+P ∗(x) log
+P∗(x)
+P (x)
+
+.
+Document36.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+1http://www.lsi.upc.edu/˜nlp/IQMT
+
+307
+
+
+
+2004 2005
+AE CE AE CE
+
+#references 5 5 5 4
+#systemsassessed 5 10 5+1 5
+#casesassessed 347 447 266 272
+
+Table 1: NIST 2004/2005 MT Evaluation Cam-
+paigns.
+
+
+
+Table 2
+Abstractive Summary: 
+Figure 2 shows two
+possible relationships between human and metric
+
+308
+
+
+
+Table 2: Metrics rankings according to correlation
+with human judgements using CE05 vs. AE05
+
+Figure 2: Human judgements and scores of two
+hypothetical metrics with Pearson correlation 0.5
+
+produced scores.
+For instance, Table 2 shows the best 10 met-
+rics in CE05 according to their correlation with
+human judges at the system level, and then the
+ranking they obtain in the AE05 testbed.
+
+
+
+Table 3
+Abstractive Summary: 
+CE2004 10 45 40
+AE2004 5 10 8
+CE2005 5 10 4
+AE2005 5 10 6
+Total 25 75 58
+
+Table 3: System pairs with a significant difference
+according to human judgements (Wilcoxon test)
+
+(precision) represents the reliability of improve-
+ments detected by metrics.
+First, Table 3 shows the amount of signif-
+icant improvements over human judgements ac-
+cording to the Wilcoxon statistical significant test
+(α ≤ 0.025).
+
+
+
+Table 4
+Abstractive Summary: 
+5.70
+
+NIST 5.70
+randOST 5.20
+minOST 3.67
+
+Table 4: Metrics ranked according to the Oracle
+System Test
+
+predictive power of the employed automatic eval-
+uation metric.
+Table 4 shows OST values obtained for the best
+metrics.
+The most remarkable result
+in Table 4 is that metrics are closer to the random
+baseline than to the upperbound (maximum OST).
+Document192.txt
+
+Document186.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+251
+
+
+
+System MOSES MCPG
+Well formed (Kappa) 64%(0.57) 63%(0.84)
+Meaning preserved (Kappa) 58%(0.48) 55%(0.64)
+Well formed and meaning preserved (Kappa) 50%(0.54) 49%(0.59)
+
+Table 1: Results of paraphrases evaluation for 100 sentences in French using English as the pivot lan-
+guage.
+Document227.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+Table 1: Computing cooperation in our coding scheme 
+(from Bethan Davies, 2006 adapted) 
+
+Thus, expected agreement is measured as the 
+overall proportion of items assigned to a category 
+k by all coders n.  
+
+Cooperation annotation for giver has a Fleiss’ 
+kappa score of 0.835 (p<0.001), while for follow-
+er cooperation annotation is 0.829 (p<0.001).
+In 
+Table 1 we report some of the dialogue moves, 
+called cooperation type, and the corresponding 
+cooperation weighting level.
+Document233.txt
+
+Document8.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+57
+
+
+
+Table 1: Feature Notations
+
+Notation Meaning
+s The word in the top of stack
+s′ The first word below the top of stack.
+
+
+
+Table 2
+Abstractive Summary: 
+Sdi = argmax
+∏
+
+i
+
+p(di|di−1di−2...),
+
+where Sdi is the object parsing action sequence,
+p(di|di−1...) is the conditional probability, and di
+
+58
+
+
+
+Figure 1: A comparison before and after translation
+
+Table 2: Features for Parsing
+in.form, n = 0, 1
+i.form + i1.form
+in.char2 + in+1.char2, n = −1, 0
+i.char−1 + i1.char−1
+in.char−2 n = 0, 3
+i1.char−2 + i2.char−2 +i3.char−2
+i.lnverb.char−2
+i3.pos
+in.pos + in+1.pos, n = 0, 1
+i−2.cpos1 + i−1.cpos1
+i1.cpos1 + i2.cpos1 + i3.cpos1
+s′2.char1
+s′.char−2 + s′1.char−2
+s′−2.cpos2
+s′−1.cpos2 + s
+
+′
+1.cpos2
+
+s′.cpos2 + s′1.cpos2
+s’.children.cpos2.seq
+s’.children.dprel.seq
+s’.subtree.depth
+s′.h.form + s′.rm.cpos1
+s′.lm.char2 + s′.char2
+s.h.children.dprel.seq
+s.lm.dprel
+s.char−2 + i1.char−2
+s.charn + i.charn, n = −1, 1
+s−1.pos + i1.pos
+s.pos + in.pos, n = −1, 0, 1
+s : i|linePath.form.bag
+s′.form + i.form
+s′.char2 + in.char2, n = −1, 0, 1
+s.curroot.pos + i.pos
+s.curroot.char2 + i.char2
+s.children.cpos2.seq + i.children.cpos2.seq
+s.children.cpos2.seq + i.children.cpos2.seq
++ s.cpos2 + i.cpos2
+s′.children.dprel.seq + i.children.dprel.seq
+preact−1
+preact−2
+preact−2+preact−1
+
+is i-th parsing action.
+With notations defined in Table 1, a feature set
+as shown in Table 2 is adopted.
+
+
+
+Table 3
+Abstractive Summary: 
+These parameters could be set to full or charn as
+shown in Table 1, where n = ...,−2,−1, 1, 2, ....
+For example, a possible feature could be
+φ(s.full, i.char1, dp.full, hd.char1), it tries to
+find a match in L by comparing stack word and
+dp word, and the first character of input word
+
+Table 3: Features based on the translated treebank
+
+φ(i.char3, s
+′.full, dp.char3, hd.full)+i.char3
+
++s′.form
+φ(i.char3, s.char2, dp.char3, hd.char2)+s.char2
+φ(i.char3, s.full, dp.char3, hd.char2)+s.form
+ψ(s′.char−2, hd.char−2, head)+i.pos+s′.pos
+φ(i.char3, s.full, dp.char3, hd.char2)+s.full
+φ(s′.full, i.char4, dp.full, hd.char4)+s′.pos+i.pos
+ψ(i.full, hd.char2, root)+i.pos+s.pos
+ψ(i.full, hd.char2, root)+i.pos+s′.pos
+ψ(s.full, dp.full, dependant)+i.pos
+pairscore(s′.pos, i.pos)+s′.form+i.form
+rootscore(s′.pos)+s′.form+i.form
+rootscore(s′.pos)+i.pos
+
+and the first character of hd word.
+
+
+
+Table 4
+Abstractive Summary: 
+Table 4: The results with different feature sets
+features with p without p
+
+baseline -d 0.846 0.858
++da 0.848 0.860
+
++Tb -d 0.859 0.869
++d 0.861 0.870
+
+a+d: using three Markovian features preact and
+beam search decoding.
+
+
+
+Table 5
+Abstractive Summary: 
+Table 5: Comparison against the state-of-the-art
+full up to 40
+
+(McDonald and Pereira, 2006)a - 0.825
+(Wang et al., 2007) - 0.866
+(Chen et al., 2008) 0.852 0.884
+
+Ours 0.861 0.889
+aThis results was reported in (Wang et al., 2007).
+Table 5 shows the results achieved
+by other researchers and ours (UAS with p), which
+indicates that our parser outperforms any other
+ones 4.
+
+
+
+Table 6
+Abstractive Summary: 
+Table 6: Matching degree distribution
+dependant-match head-match Percent (%)
+
+None None 9.6
+None Partial 16.2
+None Full 9.9
+Partial None 12.4
+Partial Partial 42.6
+Partial Full 7.3
+Full None 3.7
+Full Partial 7.0
+Full Full 0.2
+
+Note that only a bilingual lexicon is adopted in
+our approach.
+Table 6 shows such a statistics on the matching
+degree distribution from all training samples for
+Chinese parsing.
+Document237.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+25
+
+
+
+System BLEU-4
+google 31.14
+lium 26.89
+dcu 26.86
+
+joshua 26.52
+uka 25.96
+
+limsi 25.51
+uedin 25.44
+rwth 24.89
+
+cmu-statxfer 23.65
+
+Table 1: BLEU scores for top primary systems on
+the WMT-09 French-English Task from Callison-
+Burch et al.
+Document223.txt
+
+
+
+
+Table 1
+Abstractive Summary: 
+Table 1: Terms and methods defined in our algorithm.
+
+
+
+Table 2
+Abstractive Summary: 
+Count
+3-6 96.61 7.42 90.34 15.20 56
+7-8 92.37 15.77 86.00 19.34 57
+9-10 92.80 8.18 82.73 17.15 45
+11-20 89.97 12.54 82.52 15.51 58
+3-20 92.91 11.84 85.51 17.05 216
+
+Table 2: Precision of diagramming algorithm on testing data.
+
+
+
+Table 3
+Abstractive Summary: 
+Relations Rule
+abbrev, advmod, amod, dep, det, measure, neg, nn,
+num, number, poss, predet, prep, quantmod, ref
+
+GOV.ADD(DEP,DIAGONAL)
+
+iobj, parataxis, pobj GOV.ADD(DEP,HORIZONTAL)
+appos, possessive, prt GOV.APP(DEP,TRUE)
+aux, tmod GOV.APP(DEP,FALSE)
+advcl, csubj, pcomp, rcmod GOV.ADD(NEW(DEP,PRD))
+complm, expl, mark GOV.SEGMENT.EXPL.ADD(DEP)
+
+Table 3: Sets of multiple dependency relations which are converted identically.
+.DS_Store
+
